@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+/* Esto le dice a Tailwind dónde buscar tus clases de diseño */
+@source "../app/**/*.{js,ts,jsx,tsx}";
