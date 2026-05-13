@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `Diseño-De-Fruti-Home`
-- **Generated On**: 2026-04-29 02:03:30 (America/Bogota / GMT-05:00)
+- **Generated On**: 2026-05-13 00:43:25 (America/Bogota / GMT-05:00)
 - **Total Files Processed**: 87
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -90,12 +90,12 @@
 │   │   │   ├── 📄 Ajustes.tsx (5.7 KB)
 │   │   │   ├── 📄 Caja.tsx (12.32 KB)
 │   │   │   ├── 📄 Cocina.tsx (6.46 KB)
-│   │   │   ├── 📄 Inventario.tsx (9.07 KB)
-│   │   │   ├── 📄 Login.tsx (2.98 KB)
-│   │   │   ├── 📄 Mesas.tsx (9.5 KB)
+│   │   │   ├── 📄 Inventario.tsx (8.13 KB)
+│   │   │   ├── 📄 Login.tsx (3.35 KB)
+│   │   │   ├── 📄 Mesas.tsx (9.83 KB)
 │   │   │   ├── 📄 Pedido.tsx (8.63 KB)
 │   │   │   ├── 📄 Reportes.tsx (7.83 KB)
-│   │   │   └── 📄 Stats.tsx (6.85 KB)
+│   │   │   └── 📄 Stats.tsx (7.47 KB)
 │   │   ├── 📄 App.tsx (1.77 KB)
 │   │   └── 📄 routes.tsx (780 B)
 │   ├── 📁 lib/
@@ -221,7 +221,7 @@
 | Total Directories | 11 |
 | Text Files | 86 |
 | Binary Files | 1 |
-| Total Size | 472.47 KB |
+| Total Size | 472.84 KB |
 
 ### 📄 File Types Distribution
 
@@ -6691,9 +6691,9 @@ export function EditItemModal({ item, onClose, onSave }: EditItemModalProps) {
 - **Location**: `src/app/components/Layout.tsx`
 - **Relative Path**: `src/app/components`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-21 02:47:07 (America/Bogota / GMT-05:00)
-- **MD5**: `5012636d69706ef06d516d614d1a81a8`
-- **SHA256**: `4e49e6a122f91050dea65e244b3943b50c6fd5ef8517e78a23bf2e814d18fbd4`
+- **Modified**: 2026-05-13 00:42:46 (America/Bogota / GMT-05:00)
+- **MD5**: `350f99dc226755d1b518f297f3dd621f`
+- **SHA256**: `bc45b597950b54d6ba7fa311b39f0bc8a8cfbc6b178bd2cef5d0b3b88fb4f898`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -6730,7 +6730,7 @@ export default function Layout() {
         <div className="flex items-center gap-3 mb-12 px-2">
           <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🍦</div>
           <div>
-            <h1 className="text-xl font-black text-slate-900 leading-none">Fruti Home</h1>
+            <h1 className="text-xl font-black text-slate-900 leading-none">Como en Casa</h1>
             <p className="text-[10px] text-slate-400 font-bold uppercase mt-1">{user?.role === 'admin' ? 'Panel Dueño' : 'Panel Venta'}</p>
           </div>
         </div>
@@ -7746,9 +7746,9 @@ export function Ajustes() {
 - **Location**: `src/app/pages/Caja.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-17 15:22:45 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-21 02:48:19 (America/Bogota / GMT-05:00)
-- **MD5**: `06dcb52b53889577297fa1fa9691e13b`
-- **SHA256**: `a8e48501fa02df9f4749eadb73e640b140c5c6c82d51d75176d672bae3a5d65a`
+- **Modified**: 2026-05-13 00:34:42 (America/Bogota / GMT-05:00)
+- **MD5**: `a133e126e3921ca67a1ecdf9a6c1172a`
+- **SHA256**: `a2fc36374abcb2f9d29e3b8dcbabeda84f05dc9670b0918b5c0515a9f14e1203`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -7833,15 +7833,15 @@ export function Caja() {
     }).eq('id', activeShift.id);
 
     if (!error) {
-        const msg = `🏁 *CIERRE DE CAJA - FRUTI HOME* 🏁\n\n` +
-                    `👤 *Vendedor:* ${user.name}\n` +
-                    `📥 *Base:* $${Number(activeShift.initial_balance).toLocaleString()}\n` +
-                    `💰 *Ventas Efectivo:* $${efe.toLocaleString()}\n` +
-                    `🏦 *Nequi:* $${neq.toLocaleString()}\n` +
-                    `💸 *Gastos:* $${gas.toLocaleString()}\n` +
-                    `--------------------------\n` +
-                    `💵 *Efectivo en Caja:* $${saldoEstimado.toLocaleString()}\n` +
-                    `📈 *ACUMULADO TOTAL:* $${historico.toLocaleString()}`;
+      const msg = `🏁 *CIERRE DE CAJA - COMO EN CASA HELADERÍA* 🏁\n\n` +
+                  `👤 *Vendedor:* ${user.name}\n` +
+                  `📥 *Base:* $${Number(activeShift.initial_balance).toLocaleString()}\n` +
+                  `💰 *Ventas Efectivo:* $${efe.toLocaleString()}\n` +
+                  `🏦 *Nequi:* $${neq.toLocaleString()}\n` +
+                  `💸 *Gastos:* $${gas.toLocaleString()}\n` +
+                  `--------------------------\n` +
+                  `💵 *Efectivo en Caja:* $${saldoEstimado.toLocaleString()}\n` +
+                  `📈 *ACUMULADO TOTAL:* $${historico.toLocaleString()}`;
         
         await sendTelegram(msg);
         toast.success("Caja cerrada y reporte enviado");
@@ -8095,15 +8095,15 @@ export function Cocina() {
 ### <a id="📄-src-app-pages-inventario-tsx"></a>📄 `src/app/pages/Inventario.tsx`
 
 **File Info:**
-- **Size**: 9.07 KB
+- **Size**: 8.13 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Inventario.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-17 15:41:33 (America/Bogota / GMT-05:00)
-- **MD5**: `e6556c0a1925bd7c3efe62cd1bca9d31`
-- **SHA256**: `96817f18086ca74f6dcb6bbc2759c5ca637567a2547ecf23f47fc18df89cfbc6`
+- **Modified**: 2026-05-13 00:43:24 (America/Bogota / GMT-05:00)
+- **MD5**: `3bf3e072554849c0301475569b0bf597`
+- **SHA256**: `a84dfec60e3ab8a6eab284598d2c3043c641959e9305b7f95e6004bd6ce04d81`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8112,99 +8112,111 @@ export function Cocina() {
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Card } from '../components/ui/card';
-import { Search, Plus, Edit3, Trash2, IceCream, UtensilsCrossed, Package } from 'lucide-react';
+import { Plus, Trash2, Edit3, Package, Search } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { toast } from 'sonner';
-import { 
-  Dialog, 
-  DialogContent, 
-  DialogHeader, 
-  DialogTitle, 
-  DialogFooter, 
-  DialogDescription 
-} from "../components/ui/dialog";
-
-const SABORES_BASE = ['Vainilla', 'Chocolate', 'Fresa', 'Veteado', 'Ron con Pasas', 'Chicle', 'Oreo', 'Brownie'];
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog";
 
 export function Inventario() {
   const [products, setProducts] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [busqueda, setBusqueda] = useState('');
   const [isModal, setIsModal] = useState(false);
-  const [editing, setEditing] = useState<any>(null);
-  const [form, setForm] = useState<any>({ 
-    name: '', category: 'helados', price: 0, cost: 0, stock: 0, 
-    tipo_producto: 'venta', sabores_disponibles: [], active: true 
-  });
+  const [search, setSearch] = useState('');
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [form, setForm] = useState({ name: '', category: 'Helados', price: '', stock: '', type: 'VENTA' });
 
-  useEffect(() => { fetchP(); }, []);
+  useEffect(() => { fetchProducts(); }, []);
 
-  async function fetchP() {
+  async function fetchProducts() {
     const { data } = await supabase.from('products').select('*').order('name', { ascending: true });
     if (data) setProducts(data);
-    setLoading(false);
   }
 
   const handleSave = async () => {
-    if (!form.name) return toast.error("El nombre es obligatorio");
-    try {
-      if (editing) await supabase.from('products').update(form).eq('id', editing.id);
-      else await supabase.from('products').insert([form]);
-      setIsModal(false);
-      fetchP();
-      toast.success("Inventario actualizado");
-    } catch (e) { toast.error("Error al guardar"); }
+    if (!form.name || !form.price) return toast.error("Completa los datos obligatorios");
+    
+    const payload = {
+      name: form.name,
+      category: form.category,
+      price: Number(form.price),
+      stock: form.stock ? Number(form.stock) : null,
+      type: form.type
+    };
+
+    if (editingId) {
+      await supabase.from('products').update(payload).eq('id', editingId);
+      toast.success("Producto actualizado");
+    } else {
+      await supabase.from('products').insert([payload]);
+      toast.success("Producto creado");
+    }
+
+    setIsModal(false);
+    setEditingId(null);
+    setForm({ name: '', category: 'Helados', price: '', stock: '', type: 'VENTA' });
+    fetchProducts();
   };
 
-  const toggleSabor = (s: string) => {
-    const sabs = form.sabores_disponibles || [];
-    setForm({ ...form, sabores_disponibles: sabs.includes(s) ? sabs.filter((x:string) => x !== s) : [...sabs, s] });
+  const deleteProduct = async (id: string) => {
+    if (!confirm("¿Seguro que deseas eliminar este producto?")) return;
+    await supabase.from('products').delete().eq('id', id);
+    fetchProducts();
+    toast.success("Producto eliminado");
   };
-
-  if (loading) return <div className="p-20 text-center font-black text-slate-300 animate-pulse">CARGANDO INVENTARIO...</div>;
 
   return (
-    <div className="p-8 bg-[#F8FAFC] min-h-full">
+    <div className="p-10 bg-[#F8FAFC] min-h-full">
       <div className="flex justify-between items-end mb-10">
         <div>
-          <h1 className="text-4xl font-black uppercase tracking-tighter text-slate-900">Inventario</h1>
-          <p className="text-slate-500 font-medium italic">Control total de Fruti Home</p>
+          {/* MARCA ACTUALIZADA */}
+          <h1 className="text-4xl font-black uppercase text-slate-900 tracking-tighter">Inventario</h1>
+          <p className="text-slate-500 font-medium italic">Control total de Como en Casa Heladería</p>
         </div>
-        <Button onClick={() => { setEditing(null); setForm({ name:'', category:'helados', price:0, cost:0, stock:0, tipo_producto:'venta', sabores_disponibles:[], active:true }); setIsModal(true); }} className="bg-blue-600 text-white rounded-2xl h-14 px-8 font-black shadow-lg uppercase hover:bg-blue-700 transition-all">
-          <Plus className="mr-2"/> Nuevo Producto
+        <Button onClick={() => { setIsModal(true); setEditingId(null); }} className="bg-blue-600 text-white rounded-2xl h-14 px-8 font-black uppercase text-[10px] shadow-lg shadow-blue-100">
+          <Plus size={16} className="mr-2"/> Nuevo Producto
         </Button>
       </div>
 
+      {/* BUSCADOR */}
+      <div className="relative mb-8 max-w-md">
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300" size={18}/>
+        <input type="text" placeholder="Filtrar por nombre..." className="w-full pl-12 pr-4 py-4 bg-white rounded-2xl border-none font-bold text-sm shadow-sm outline-none" onChange={(e) => setSearch(e.target.value)} />
+      </div>
+
+      {/* TABLA DE PRODUCTOS */}
       <Card className="border-none shadow-sm rounded-[40px] overflow-hidden bg-white">
         <table className="w-full text-left">
-          <thead className="bg-slate-50 border-b border-slate-100">
-            <tr>
-              <th className="px-10 py-6 text-[10px] font-black text-slate-400 uppercase">Producto</th>
-              <th className="px-10 py-6 text-[10px] font-black text-slate-400 uppercase text-center">Tipo</th>
-              <th className="px-10 py-6 text-[10px] font-black text-slate-400 uppercase text-right">Precio/Stock</th>
-              <th className="px-10 py-6 text-[10px] font-black text-slate-400 uppercase text-center">Acciones</th>
+          <thead className="bg-slate-50 border-b">
+            <tr className="text-[10px] font-black uppercase text-slate-400">
+              <th className="px-10 py-6">Producto</th>
+              <th className="px-10 py-6">Tipo</th>
+              <th className="px-10 py-6 text-right">Precio/Stock</th>
+              <th className="px-10 py-6 text-center">Acciones</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-50">
-            {products.filter(p => p.name.toLowerCase().includes(busqueda.toLowerCase())).map(p => (
-              <tr key={p.id} className="hover:bg-blue-50/20 transition-all">
+            {products.filter(p => p.name.toLowerCase().includes(search.toLowerCase())).map((p) => (
+              <tr key={p.id} className="hover:bg-slate-50/30 transition-colors">
                 <td className="px-10 py-6">
-                  <p className="font-bold text-slate-800 text-lg leading-tight">{p.name}</p>
-                  <span className="text-[10px] font-black text-slate-300 uppercase tracking-widest">{p.category}</span>
+                  <p className="font-black text-slate-800 text-base uppercase leading-tight">{p.name}</p>
+                  <p className="text-[10px] text-slate-400 font-black uppercase mt-1 tracking-widest">{p.category}</p>
                 </td>
-                <td className="px-10 py-6 text-center">
-                  <span className={`px-3 py-1 rounded-full text-[9px] font-black uppercase ${p.tipo_producto === 'venta' ? 'bg-emerald-50 text-emerald-600' : p.tipo_producto === 'preparacion' ? 'bg-pink-50 text-pink-600' : 'bg-blue-50 text-blue-600'}`}>
-                    {p.tipo_producto}
+                <td className="px-10 py-6">
+                  <span className={`text-[9px] font-black uppercase px-3 py-1 rounded-full ${p.type === 'PREPARACION' ? 'bg-pink-50 text-pink-600' : 'bg-emerald-50 text-emerald-600'}`}>
+                    {p.type}
                   </span>
                 </td>
-                <td className="px-10 py-6 text-right font-black text-slate-900">
-                  <p>${Number(p.price).toLocaleString()}</p>
-                  <p className="text-[10px] text-slate-300 uppercase">{p.tipo_producto === 'preparacion' ? 'Ilimitado' : `${p.stock} unid.`}</p>
+                <td className="px-10 py-6 text-right">
+                  <p className="font-black text-slate-900 text-xl tracking-tighter">${Number(p.price).toLocaleString()}</p>
+                  <p className="text-[10px] text-slate-400 font-bold uppercase mt-0.5">{p.stock !== null ? `${p.stock} Unid.` : 'Ilimitado'}</p>
                 </td>
                 <td className="px-10 py-6">
-                  <div className="flex justify-center gap-3">
-                    <button onClick={() => { setEditing(p); setForm(p); setIsModal(true); }} className="p-3 bg-slate-50 text-slate-400 rounded-xl hover:bg-blue-600 hover:text-white transition-all"><Edit3 size={18}/></button>
-                    <button onClick={() => { if(confirm('¿Eliminar?')) supabase.from('products').delete().eq('id', p.id).then(() => fetchP()) }} className="p-3 bg-red-50 text-red-400 rounded-xl hover:bg-red-600 hover:text-white transition-all"><Trash2 size={18}/></button>
+                  <div className="flex items-center justify-center gap-2">
+                    <button onClick={() => {
+                      setEditingId(p.id);
+                      setForm({ name: p.name, category: p.category || 'Helados', price: p.price.toString(), stock: p.stock ? p.stock.toString() : '', type: p.type || 'VENTA' });
+                      setIsModal(true);
+                    }} className="p-2 text-slate-300 hover:text-blue-500 transition-colors"><Edit3 size={16}/></button>
+                    <button onClick={() => deleteProduct(p.id)} className="p-2 text-slate-300 hover:text-red-500 transition-colors"><Trash2 size={16}/></button>
                   </div>
                 </td>
               </tr>
@@ -8213,62 +8225,26 @@ export function Inventario() {
         </table>
       </Card>
 
+      {/* MODAL NUEVO / EDITAR */}
       <Dialog open={isModal} onOpenChange={setIsModal}>
-        <DialogContent className="sm:max-w-[600px] rounded-[40px] p-10 bg-white shadow-2xl border-none overflow-hidden">
-          <DialogHeader>
-            <DialogTitle className="text-3xl font-black uppercase tracking-tighter">Configurar Item</DialogTitle>
-            <DialogDescription className="font-bold text-slate-400">Selecciona el tipo y completa los datos.</DialogDescription>
-          </DialogHeader>
-
-          <div className="grid grid-cols-3 gap-3 mb-8">
-            {['venta', 'preparacion', 'insumo'].map((t:any) => (
-              <button key={t} onClick={() => setForm({...form, tipo_producto: t})} className={`p-4 rounded-2xl border-2 flex flex-col items-center gap-2 transition-all ${form.tipo_producto === t ? 'border-blue-600 bg-blue-50 text-blue-700' : 'border-slate-50 text-slate-300 opacity-60'}`}>
-                {t === 'venta' ? <IceCream/> : t === 'preparacion' ? <UtensilsCrossed/> : <Package/>}
-                <span className="text-[9px] font-black uppercase tracking-widest">{t}</span>
-              </button>
-            ))}
-          </div>
-
-          <div className="space-y-6">
-            <div className="flex flex-col gap-2">
-              <label className="text-[10px] font-black text-slate-400 uppercase ml-2 tracking-widest">Nombre del Producto</label>
-              <input className="w-full p-5 bg-slate-50 rounded-2xl font-bold border-none outline-none focus:ring-2 focus:ring-blue-100" placeholder="Ej: Paleta de Agua o Ensalada..." value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
+        <DialogContent className="rounded-[40px] p-10 bg-white border-none shadow-2xl max-w-md">
+          <DialogHeader><DialogTitle className="text-2xl font-black uppercase text-center text-slate-900">{editingId ? 'Editar' : 'Nuevo'} Producto</DialogTitle></DialogHeader>
+          <div className="space-y-5 mt-6">
+            <div className="space-y-1"><label className="text-[10px] font-black uppercase text-slate-400 ml-2">Nombre</label><input className="w-full p-4 bg-slate-50 rounded-2xl font-bold border-none" value={form.name} onChange={e => setForm({...form, name: e.target.value})} placeholder="Ej: Paleta de Coco" /></div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1"><label className="text-[10px] font-black uppercase text-slate-400 ml-2">Precio ($)</label><input type="number" className="w-full p-4 bg-slate-50 rounded-2xl font-black text-lg border-none text-blue-600" value={form.price} onChange={e => setForm({...form, price: e.target.value})} placeholder="5000" /></div>
+              <div className="space-y-1"><label className="text-[10px] font-black uppercase text-slate-400 ml-2">Stock Inicial</label><input type="number" className="w-full p-4 bg-slate-50 rounded-2xl font-bold border-none" value={form.stock} onChange={e => setForm({...form, stock: e.target.value})} placeholder="Ilimitado" /></div>
             </div>
-
-            {form.tipo_producto === 'preparacion' && (
-              <div className="space-y-3">
-                <p className="text-[10px] font-black text-slate-400 uppercase ml-2 tracking-widest">Sabores Disponibles:</p>
-                <div className="grid grid-cols-3 gap-2">
-                  {SABORES_BASE.map(s => (
-                    <button key={s} onClick={() => toggleSabor(s)} className={`p-2 rounded-xl text-[10px] font-bold border transition-all ${form.sabores_disponibles?.includes(s) ? 'bg-pink-500 text-white border-pink-600 shadow-md' : 'bg-white text-slate-400 border-slate-100'}`}>
-                      {s}
-                    </button>
-                  ))}
-                </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-1"><label className="text-[10px] font-black uppercase text-slate-400 ml-2">Categoría</label>
+                <select className="w-full p-4 bg-slate-50 rounded-2xl font-bold border-none outline-none" value={form.category} onChange={e => setForm({...form, category: e.target.value})}><option value="Helados">Helados</option><option value="Paletas">Paletas</option><option value="Bebidas">Bebidas</option></select>
               </div>
-            )}
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {form.tipo_producto !== 'insumo' && (
-                <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-black text-slate-400 uppercase ml-2 tracking-widest">Precio al Público</label>
-                  <input type="number" className="w-full p-5 bg-slate-50 rounded-2xl font-black text-2xl outline-none" value={form.price} onChange={e => setForm({...form, price: Number(e.target.value)})} />
-                </div>
-              )}
-              {form.tipo_producto !== 'preparacion' && (
-                <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-black text-slate-400 uppercase ml-2 tracking-widest">Stock Disponible</label>
-                  <input type="number" className="w-full p-5 bg-slate-50 rounded-2xl font-black text-2xl outline-none" value={form.stock} onChange={e => setForm({...form, stock: Number(e.target.value)})} />
-                </div>
-              )}
+              <div className="space-y-1"><label className="text-[10px] font-black uppercase text-slate-400 ml-2">Modo POS</label>
+                <select className="w-full p-4 bg-slate-50 rounded-2xl font-bold border-none outline-none" value={form.type} onChange={e => setForm({...form, type: e.target.value})}><option value="VENTA">Venta Rápida</option><option value="PREPARACION">Cocina</option></select>
+              </div>
             </div>
+            <Button onClick={handleSave} className="w-full h-16 bg-slate-900 text-white rounded-2xl font-black uppercase shadow-xl mt-4">Guardar Producto</Button>
           </div>
-
-          <DialogFooter className="mt-8">
-            <Button onClick={handleSave} className="w-full h-20 bg-blue-600 text-white rounded-[24px] font-black text-lg shadow-xl shadow-blue-100 uppercase tracking-widest hover:bg-blue-700">
-              {editing ? 'Guardar Cambios' : 'Registrar Producto'}
-            </Button>
-          </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
@@ -8282,15 +8258,15 @@ export function Inventario() {
 ### <a id="📄-src-app-pages-login-tsx"></a>📄 `src/app/pages/Login.tsx`
 
 **File Info:**
-- **Size**: 2.98 KB
+- **Size**: 3.35 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Login.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-18 18:04:53 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-19 03:13:59 (America/Bogota / GMT-05:00)
-- **MD5**: `d72769be6ce5f23ff9321b9e67821124`
-- **SHA256**: `3c32eb227806fd8654fbcccc272192e2d610daab99b5e856b3e372307695a37f`
+- **Modified**: 2026-05-13 00:39:47 (America/Bogota / GMT-05:00)
+- **MD5**: `34c81a12e4a982b973612ab03fb9fe24`
+- **SHA256**: `332df4b28fbf8c845b3a4e0da3bffa4a5287d3e71c46e3d460da583758862eae`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8323,9 +8299,8 @@ export function Login() {
     const { data } = await supabase.from('profiles').select('*').eq('pin', pin).maybeSingle();
     if (data) {
       login(data);
-      sendTelegram(`🛡️ *ACCESO AL SISTEMA*\n\nEl usuario *${data.name}* acaba de entrar.`);
+      sendTelegram(`🛡️ *ACCESO AL POS - COMO EN CASA*\n\nEl usuario *${data.name}* acaba de iniciar sesión.`);
       toast.success(`¡Bienvenido!`);
-      // REDIRECCIÓN INTELIGENTE: Admin a Stats, Vendedor a Mesas
       const path = data.role === 'admin' ? '/stats' : '/';
       setTimeout(() => navigate(path), 500);
     } else {
@@ -8337,20 +8312,24 @@ export function Login() {
   return (
     <div className="h-screen w-screen bg-[#F8FAFC] flex flex-col items-center justify-center">
       <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center text-4xl mb-6 shadow-inner animate-bounce">🍦</div>
-      <h1 className="text-3xl font-black text-slate-900 uppercase tracking-tighter mb-2">Fruti Home</h1>
-      <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-12">Seguridad POS</p>
+      <h1 className="text-4xl font-black text-slate-900 uppercase tracking-tighter mb-2">Como en Casa</h1>
+      <p className="text-slate-400 text-xs font-bold uppercase tracking-[3px] mb-12">Heladería & POS</p>
+      
+      {/* CORREGIDO: Array definido para los 4 puntos del PIN */}
       <div className="flex gap-6 mb-12">
-        {[0,1,2,3].map((i) => (
+        {[0, 1, 2, 3].map((i: number) => (
           <div key={i} className={`w-5 h-5 rounded-full border-2 border-pink-500 transition-all ${pin.length > i ? 'bg-pink-500 scale-125 shadow-lg' : ''}`} />
         ))}
       </div>
+      
+      {/* CORREGIDO: Array definido para los botones del 1 al 9 */}
       <div className="grid grid-cols-3 gap-5">
-        {[1,2,3,4,5,6,7,8,9].map(n => (
-          <button key={n} onClick={() => setPin(p => p + n)} className="w-20 h-20 bg-white rounded-[24px] shadow-sm text-2xl font-black hover:bg-slate-50">{n}</button>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n: number) => (
+          <button key={n} onClick={() => { if (pin.length < 4) setPin(p => p + n); }} className="w-20 h-20 bg-white rounded-[24px] shadow-sm text-2xl font-black border border-slate-100 active:scale-90">{n}</button>
         ))}
-        <button onClick={() => setPin('')} className="w-20 h-20 bg-slate-100 rounded-[24px] flex items-center justify-center text-slate-400"><Delete/></button>
-        <button onClick={() => setPin(p => p + '0')} className="w-20 h-20 bg-white rounded-[24px] font-black text-2xl">0</button>
-        <button onClick={handleLogin} disabled={pin.length < 4} className={`w-20 h-20 rounded-[24px] flex items-center justify-center ${pin.length === 4 ? 'bg-pink-500 text-white shadow-lg' : 'bg-slate-200 text-slate-400'}`}><Lock/></button>
+        <button onClick={() => setPin('')} className="w-20 h-20 bg-slate-100 rounded-[24px] flex items-center justify-center text-slate-400 hover:bg-red-50 hover:text-red-400 active:scale-90 transition-all"><Delete/></button>
+        <button onClick={() => { if (pin.length < 4) setPin(p => p + '0'); }} className="w-20 h-20 bg-white rounded-[24px] shadow-sm text-2xl font-black border border-slate-100 active:scale-90">0</button>
+        <button onClick={handleLogin} disabled={pin.length < 4} className={`w-20 h-20 rounded-[24px] flex items-center justify-center transition-all ${pin.length === 4 ? 'bg-pink-500 text-white shadow-lg active:scale-95' : 'bg-slate-200 text-slate-400 cursor-not-allowed'}`}><Lock/></button>
       </div>
     </div>
   );
@@ -8363,15 +8342,15 @@ export function Login() {
 ### <a id="📄-src-app-pages-mesas-tsx"></a>📄 `src/app/pages/Mesas.tsx`
 
 **File Info:**
-- **Size**: 9.5 KB
+- **Size**: 9.83 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Mesas.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-21 02:46:24 (America/Bogota / GMT-05:00)
-- **MD5**: `49ce505209bc0f6412d27cbe74fb51a9`
-- **SHA256**: `606b82cf45a7806aab4ec2f986467306fe1dada3568127364a6b1316ffd154d6`
+- **Modified**: 2026-05-13 00:38:29 (America/Bogota / GMT-05:00)
+- **MD5**: `6577fc791369019ebc0b30a0cbe3918c`
+- **SHA256**: `5e7e2e644900c414e66bbc116ea1cbd7a2a6a2875ebf6f342c10bb3206d52e26`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8383,17 +8362,13 @@ import { supabase } from '../../lib/supabase';
 import { useAuth } from '../context/AuthContext';
 import { Button } from '../components/ui/button';
 import { sendTelegram } from '../../lib/telegram';
-import { 
-  ShoppingBag, Trash2, Banknote, CreditCard, 
-  Search, Plus, Minus, AlertCircle, Coffee, CheckCircle2, Clock 
-} from 'lucide-react';
+import { ShoppingBag, Trash2, Banknote, CreditCard, Search, Plus, Minus, AlertCircle, Coffee, CheckCircle2, Clock } from 'lucide-react';
 import { toast } from 'sonner';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog";
 
 export function Mesas() {
   const navigate = useNavigate();
   const { user, activeShift } = useAuth();
-  
   const [tables, setTables] = useState<any[]>([]);
   const [products, setProducts] = useState<any[]>([]);
   const [cart, setCart] = useState<any[]>([]);
@@ -8402,8 +8377,8 @@ export function Mesas() {
   const [refNequi, setRefNequi] = useState('');
   const [showNoShiftModal, setShowNoShiftModal] = useState(false);
 
-  useEffect(() => { 
-    load(); 
+  useEffect(() => {
+    load();
     const sub = supabase.channel('salon-simple').on('postgres_changes' as any, { event: '*', schema: 'public', table: 'tables' }, () => load()).subscribe();
     return () => { supabase.removeChannel(sub); };
   }, []);
@@ -8438,84 +8413,87 @@ export function Mesas() {
   const finalizarVenta = async (metodo: string) => {
     if (!activeShift) return setShowNoShiftModal(true);
     if (metodo === 'Transferencia' && refNequi.length < 4) return toast.error("Faltan 4 dígitos");
-
-    const { error } = await supabase.from('orders').insert([{ 
-        table_id: 0, items: cart, total: totalFinal, status: 'completed', 
-        payment_method: metodo, notes: refNequi, shift_id: activeShift.id 
-    }]);
-
+    const { error } = await supabase.from('orders').insert([{ table_id: 0, items: cart, total: totalFinal, status: 'completed', payment_method: metodo, notes: refNequi, shift_id: activeShift.id }]);
     if (!error) {
       await supabase.from('cash_movements').insert([{ shift_id: activeShift.id, type: 'venta', amount: totalFinal, description: 'Venta Mostrador', payment_method: metodo }]);
-      
       if (metodo === 'Transferencia') {
         const itemsTxt = cart.map(i => `• ${i.quantity}x ${i.name}`).join('\n');
-        sendTelegram(`📱 *PAGO NEQUI - MOSTRADOR*\n👤 *Vendedor:* ${user.name}\n--------------------------\n${itemsTxt}\n--------------------------\n💰 *Total:* $${totalFinal.toLocaleString()}\n🔢 *Ref:* ****${refNequi}`);
+        sendTelegram(`📱 *PAGO NEQUI - COMO EN CASA HELADERÍA*\n👤 *Vendedor:* ${user.name}\n--------------------------\n${itemsTxt}\n--------------------------\n💰 *Total:* $${totalFinal.toLocaleString()}\n🔢 *Ref:* ****${refNequi}`);
       }
-
       toast.success("Venta Exitosa");
-      setCart([]); setShowNequi(false); setRefNequi('');
+      setCart([]);
+      setShowNequi(false);
+      setRefNequi('');
     }
   };
 
   return (
     <div className="flex h-full bg-[#F8FAFC]">
       <div className="flex-1 p-10 overflow-auto border-r border-slate-100">
-        <div className="mb-12"><h1 className="text-5xl font-black text-slate-900 uppercase">Fruti Salón</h1></div>
+        <div className="mb-12"><h1 className="text-5xl font-black text-slate-900 uppercase tracking-tighter">Como en Casa</h1></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {tables.map((t) => (
             <div key={t.id} onClick={() => activeShift ? navigate(`/pedido/${t.id}`) : setShowNoShiftModal(true)} className={`p-8 rounded-[45px] border-4 transition-all hover:scale-[1.03] cursor-pointer shadow-xl ${t.status === 'En preparación' ? 'bg-amber-50 border-amber-200' : 'bg-white border-transparent'}`}>
-                <div className="flex justify-between items-start mb-6">
-                    <div className="w-16 h-16 rounded-3xl bg-slate-50 flex items-center justify-center text-2xl font-black">{t.id}</div>
-                    {t.status === 'En preparación' ? <Clock className="text-amber-500 animate-pulse" /> : <Coffee className="text-slate-200" />}
-                </div>
-                <p className="font-black text-slate-900 text-3xl tracking-tighter">${Number(t.total_actual).toLocaleString()}</p>
-                <p className="font-black text-[10px] uppercase mt-2 text-slate-300">{t.status}</p>
+              <div className="flex justify-between items-start mb-6">
+                <div className="w-16 h-16 rounded-3xl bg-slate-50 flex items-center justify-center text-2xl font-black">{t.id}</div>
+                {t.status === 'En preparación' ? <Clock className="text-amber-500 animate-pulse" /> : <Coffee className="text-slate-200" />}
+              </div>
+              <p className="font-black text-slate-900 text-3xl tracking-tighter">${Number(t.total_actual).toLocaleString()}</p>
+              <p className="font-black text-[10px] uppercase mt-2 text-slate-300">{t.status}</p>
             </div>
           ))}
         </div>
       </div>
-
       <aside className="w-[520px] bg-white p-10 flex flex-col shadow-2xl relative z-50">
-        <div className="flex justify-between items-center mb-8"><h2 className="text-3xl font-black text-slate-900 uppercase">Mostrador</h2>{cart.length > 0 && <button onClick={() => setCart([])} className="p-3 bg-red-50 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white transition-all"><Trash2 size={20}/></button>}</div>
-        
+        <div className="flex justify-between items-center mb-8"><h2 className="text-3xl font-black text-slate-900 uppercase tracking-tighter">Mostrador</h2>{cart.length > 0 && <button onClick={() => setCart([])} className="p-3 bg-red-50 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white transition-all"><Trash2 size={20}/></button>}</div>
         <div className="relative mb-8">
-          <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300" size={20}/><input type="text" placeholder="Buscar helado..." className="w-full pl-14 pr-6 py-5 bg-slate-50 rounded-[25px] border-none font-bold text-slate-700 outline-none" onChange={(e) => setSearch(e.target.value)} />
+          <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300" size={20} /><input type="text" placeholder="Buscar helado..." className="w-full pl-14 pr-6 py-5 bg-slate-50 rounded-[25px] border-none font-bold text-slate-700 outline-none shadow-inner" onChange={(e) => setSearch(e.target.value)} />
         </div>
-
         <div className="flex-1 overflow-auto space-y-4 pr-2 custom-scrollbar">
           <div className="grid grid-cols-2 gap-3 mb-6">
             {products.filter(p => p.name.toLowerCase().includes(search.toLowerCase())).slice(0, 4).map(p => (
-              <button key={p.id} onClick={() => addToCart(p)} className="p-4 bg-white border-2 border-slate-100 rounded-[22px] font-black text-[11px] uppercase text-slate-600 hover:border-blue-400 hover:text-blue-600 transition-all text-left truncate">{p.name}</button>
+              <button key={p.id} onClick={() => addToCart(p)} className="p-4 bg-white border-2 border-slate-100 rounded-[22px] font-black text-[11px] uppercase text-slate-600 hover:border-blue-400 hover:text-blue-600 transition-all text-left truncate shadow-sm">{p.name}</button>
             ))}
           </div>
           {cart.map((item) => (
             <div key={item.id} className="bg-slate-50 p-5 rounded-[30px] flex flex-col gap-2 border border-white shadow-sm">
               <div className="flex justify-between items-center">
                 <div className="flex-1"><p className="font-black text-slate-800 text-sm uppercase">{item.name}</p><p className="text-blue-500 font-bold text-xs">${item.price.toLocaleString()}</p></div>
-                <div className="flex items-center gap-4 bg-white p-2 rounded-2xl border">
-                    <button onClick={() => updateQty(item.id, -1)} className="text-slate-300 hover:text-red-500"><Minus size={16}/></button>
-                    <span className="font-black text-lg w-6 text-center">{item.quantity}</span>
-                    <button onClick={() => updateQty(item.id, 1)} className="text-slate-300 hover:text-blue-600"><Plus size={16}/></button>
+                <div className="flex items-center gap-4 bg-white p-2 rounded-2xl border border-slate-100 shadow-inner">
+                  <button onClick={() => updateQty(item.id, -1)} className="text-slate-300 hover:text-red-500"><Minus size={16}/></button>
+                  <span className="font-black text-lg w-6 text-center text-slate-900">{item.quantity}</span>
+                  <button onClick={() => updateQty(item.id, 1)} className="text-slate-300 hover:text-blue-600"><Plus size={16}/></button>
                 </div>
               </div>
-              <button onClick={() => removeItem(item.id)} className="text-[9px] font-black text-red-400 uppercase flex items-center gap-1 hover:text-red-600 ml-1"><Trash2 size={12}/> Quitar</button>
+              <button onClick={() => removeItem(item.id)} className="text-[9px] font-black text-red-400 uppercase flex items-center gap-1 hover:text-red-600 ml-1"><Trash2 size={12} /> Quitar</button>
             </div>
           ))}
         </div>
-
         <div className="pt-8 border-t-4 border-slate-50 mt-6 space-y-6">
           <div className="flex justify-between items-end px-4"><span className="text-slate-400 font-black text-xs uppercase tracking-widest">Total Pagar</span><span className="text-6xl font-black text-slate-900 tracking-tighter">${totalFinal.toLocaleString()}</span></div>
           <div className="grid grid-cols-2 gap-4">
-             <button onClick={() => finalizarVenta('Efectivo')} disabled={cart.length === 0} className="h-24 bg-emerald-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl">Efectivo</button>
-             <button onClick={() => setShowNequi(true)} disabled={cart.length === 0} className="h-24 bg-blue-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl">Nequi</button>
+            <button onClick={() => finalizarVenta('Efectivo')} disabled={cart.length === 0} className="h-24 bg-emerald-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl transition-all active:scale-95">Efectivo</button>
+            <button onClick={() => setShowNequi(true)} disabled={cart.length === 0} className="h-24 bg-blue-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl transition-all active:scale-95">Nequi</button>
           </div>
         </div>
       </aside>
-
-      <Dialog open={showNequi} onOpenChange={setShowNequi}><DialogContent className="rounded-[50px] p-12 bg-white border-none shadow-2xl max-w-[400px]"><DialogHeader><DialogTitle className="text-center text-3xl font-black uppercase">Referencia Nequi</DialogTitle></DialogHeader>
-          <div className="mt-8 space-y-8 text-center"><input type="number" className="w-full p-10 bg-slate-50 rounded-[35px] text-6xl font-black text-center text-blue-600 outline-none" placeholder="0000" value={refNequi} onChange={e => setRefNequi(e.target.value.slice(0,4))} /><Button onClick={() => finalizarVenta('Transferencia')} className="w-full h-20 bg-blue-600 text-white rounded-[28px] font-black text-xl uppercase shadow-xl">Confirmar</Button></div></DialogContent></Dialog>
-
-      <Dialog open={showNoShiftModal} onOpenChange={setShowNoShiftModal}><DialogContent className="rounded-[50px] p-12 bg-white text-center shadow-2xl max-w-[420px] border-none"><AlertCircle size={56} className="text-red-500 mx-auto mb-8 animate-bounce"/><DialogHeader><DialogTitle className="text-3xl font-black uppercase text-slate-900">¡Caja Cerrada!</DialogTitle></DialogHeader><p className="text-slate-500 font-medium mt-4">Abre el turno en la pestaña de <span className="font-black text-blue-600">Caja</span> antes de vender.</p><Button onClick={() => navigate('/caja')} className="w-full h-20 bg-slate-900 text-white rounded-[30px] font-black text-lg uppercase mt-10 shadow-2xl">Ir a abrir caja ahora</Button></DialogContent></Dialog>
+      <Dialog open={showNequi} onOpenChange={setShowNequi}>
+        <DialogContent className="rounded-[50px] p-12 bg-white border-none shadow-2xl max-w-[400px]">
+          <DialogHeader><DialogTitle className="text-center text-3xl font-black uppercase tracking-tighter">Referencia Nequi</DialogTitle></DialogHeader>
+          <div className="mt-8 space-y-8 text-center">
+            <input type="number" className="w-full p-10 bg-slate-50 rounded-[35px] text-6xl font-black text-center text-blue-600 outline-none border-none shadow-inner" placeholder="0000" value={refNequi} onChange={e => setRefNequi(e.target.value.slice(0, 4))} />
+            <Button onClick={() => { setShowNequi(false); finalizarVenta('Transferencia'); }} className="w-full h-20 bg-blue-600 text-white rounded-[28px] font-black text-xl uppercase shadow-xl">Confirmar</Button>
+          </div>
+        </DialogContent>
+      </Dialog>
+      <Dialog open={showNoShiftModal} onOpenChange={setShowNoShiftModal}>
+        <DialogContent className="rounded-[50px] p-12 bg-white text-center shadow-2xl max-w-[420px] border-none">
+          <AlertCircle size={56} className="text-red-500 mx-auto mb-8 animate-bounce" />
+          <DialogHeader><DialogTitle className="text-3xl font-black uppercase text-slate-900 tracking-tighter">¡Caja Cerrada!</DialogTitle></DialogHeader>
+          <p className="text-slate-500 font-medium mt-4">Abre el turno en la pestaña de <span className="font-black text-blue-600">Caja</span> antes de vender.</p>
+          <Button onClick={() => navigate('/caja')} className="w-full h-20 bg-slate-900 text-white rounded-[30px] font-black text-lg uppercase mt-10 shadow-2xl">Ir a abrir caja ahora</Button>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
@@ -8883,15 +8861,15 @@ export function Reportes() {
 ### <a id="📄-src-app-pages-stats-tsx"></a>📄 `src/app/pages/Stats.tsx`
 
 **File Info:**
-- **Size**: 6.85 KB
+- **Size**: 7.47 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Stats.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-18 18:41:20 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-21 02:48:26 (America/Bogota / GMT-05:00)
-- **MD5**: `a2c2ea45ea5562a3888473b28994bad4`
-- **SHA256**: `e7c63661cea4dac9cfb9827dfe23e1269a060e0244bfdc95fd483f9e511fa778`
+- **Modified**: 2026-05-13 00:39:55 (America/Bogota / GMT-05:00)
+- **MD5**: `25e7d62fb2926ffc137e5251094a8e7b`
+- **SHA256**: `73668ad6c3b1a3b288a997d73ef510efabd9df31a10f3d6e545d1836b4f56ecc`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8900,14 +8878,8 @@ export function Reportes() {
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Card } from '../components/ui/card';
-import { 
-  DollarSign, TrendingUp, Users, PieChart as PieIcon, 
-  Calendar, ArrowUpRight, ShoppingBag, Star
-} from 'lucide-react';
-import { 
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, 
-  Tooltip, ResponsiveContainer, Cell 
-} from 'recharts';
+import { DollarSign, TrendingUp, Users, Calendar, ArrowUpRight, ShoppingBag, Star } from 'lucide-react';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 export function Stats() {
   const [stats, setStats] = useState({ totalSales: 0, cash: 0, nequi: 0, ordersCount: 0, dailyAverage: 0, projection: 0 });
@@ -8950,31 +8922,59 @@ export function Stats() {
 
   return (
     <div className="p-10 bg-[#F8FAFC] min-h-full">
-      <div className="mb-10"><h1 className="text-4xl font-black uppercase text-slate-900 tracking-tighter">Gerencia Fruti Home</h1><p className="text-slate-500 font-medium italic">Análisis de ventas histórico</p></div>
-      
+      <div className="mb-10">
+        <h1 className="text-4xl font-black uppercase text-slate-900 tracking-tighter">Gerencia Como en Casa</h1>
+        <p className="text-slate-500 font-medium italic">Análisis de ventas histórico</p>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
         <Card className="p-8 bg-blue-600 text-white rounded-[40px] shadow-xl col-span-2 relative overflow-hidden">
            <DollarSign className="absolute -right-4 -top-4 w-32 h-32 opacity-10" /><p className="text-xs font-black uppercase tracking-widest opacity-80">Venta Histórica</p><p className="text-5xl font-black mt-2 tracking-tighter">${stats.totalSales.toLocaleString()}</p>
            <div className="mt-6 flex items-center gap-2 text-[10px] font-black bg-white/10 w-fit px-3 py-1 rounded-full uppercase"><ShoppingBag size={12}/> {stats.ordersCount} Pedidos hoy</div>
         </Card>
-
         <Card className="p-8 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-[40px] shadow-xl relative overflow-hidden col-span-2">
            <div className="absolute right-0 top-0 p-6 opacity-10"><Calendar size={80}/></div><p className="text-xs font-black uppercase tracking-widest opacity-80 flex items-center gap-2"><ArrowUpRight size={14}/> Proyección Cierre de Mes</p><p className="text-5xl font-black mt-2 tracking-tighter">${stats.projection.toLocaleString(undefined, {maximumFractionDigits:0})}</p><p className="text-[9px] mt-6 font-bold uppercase opacity-60">* Promedio diario: ${stats.dailyAverage.toLocaleString(undefined, {maximumFractionDigits:0})}</p>
         </Card>
       </div>
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
          <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center font-black">$</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Efectivo Total</p><p className="text-xl font-black text-slate-900">${stats.cash.toLocaleString()}</p></div></Card>
          <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center font-black">N</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Nequi Total</p><p className="text-xl font-black text-slate-900">${stats.nequi.toLocaleString()}</p></div></Card>
-         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center font-black font-serif">P</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Ticket Promedio</p><p className="text-xl font-black text-slate-900">${(stats.totalSales / (stats.ordersCount || 1)).toLocaleString(undefined, {maximumFractionDigits:0})}</p></div></Card>
+         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center font-serif font-black">P</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Ticket Promedio</p><p className="text-xl font-black text-slate-900">${(stats.totalSales / (stats.ordersCount || 1)).toLocaleString(undefined, {maximumFractionDigits:0})}</p></div></Card>
       </div>
-
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <Card className="p-10 bg-white rounded-[50px] border-none shadow-sm"><h2 className="text-xl font-black uppercase mb-8 flex items-center gap-2 text-slate-800"><TrendingUp size={20} className="text-blue-500"/> Balance de Ingresos</h2>
-          <div className="h-64 w-full"><ResponsiveContainer width="100%" height="100%"><BarChart data={chartData}><CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" /><XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fontSize: 12, fontWeight: 'bold', fill: '#94a3b8'}} /><Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{borderRadius: '20px', border: 'none', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)', fontWeight: 'bold'}} /><Bar dataKey="valor" radius={[15, 15, 0, 0]} barSize={60}>{chartData.map((e, i) => (<Cell key={i} fill={e.color} />))}</Bar></BarChart></ResponsiveContainer></div>
+          <div className="h-64 w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={chartData}>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
+                <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fontSize: 12, fontWeight: 'bold', fill: '#94a3b8'}} />
+                <YAxis hide />
+                <Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{borderRadius: '20px', border: 'none', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)', fontWeight: 'bold'}} />
+                <Bar dataKey="valor" radius={[15, 15, 0, 0]} barSize={60}>
+                  {chartData.map((e, i) => (<Cell key={i} fill={e.color} />))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
         </Card>
         <Card className="p-10 bg-white rounded-[50px] border-none shadow-sm"><h2 className="text-xl font-black uppercase mb-8 flex items-center gap-2 text-slate-800"><Star size={20} className="text-amber-500 fill-amber-500"/> Más Vendidos</h2>
-          <div className="space-y-6">{topProducts.map((p, i) => (<div key={i} className="space-y-2"><div className="flex justify-between items-end"><p className="text-sm font-black text-slate-700 uppercase tracking-tight">{i + 1}. {p.name}</p><p className="text-sm font-black text-slate-900">{p.qty} u.</p></div><div className="w-full h-3 bg-slate-50 rounded-full overflow-hidden"><div className="h-full bg-blue-500 transition-all duration-1000" style={{ width: `${(p.qty / topProducts[0].qty) * 100}%` }} /></div></div>))}</div>
+          <div className="space-y-6">
+            {topProducts.map((p, i) => {
+              // CORREGIDO: Cálculo seguro del porcentaje para evitar errores de tipo
+              const maxQty = topProducts[0]?.qty || 1;
+              const percentage = (p.qty / maxQty) * 100;
+              return (
+                <div key={i} className="space-y-2">
+                  <div className="flex justify-between items-end">
+                    <p className="text-sm font-black text-slate-700 uppercase tracking-tight">{i + 1}. {p.name}</p>
+                    <p className="text-sm font-black text-slate-900">{p.qty} u.</p>
+                  </div>
+                  <div className="w-full h-3 bg-slate-50 rounded-full overflow-hidden">
+                    <div className="h-full bg-blue-500 transition-all duration-1000" style={{ width: `${percentage}%` }} />
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </Card>
       </div>
     </div>

@@ -77,15 +77,15 @@ export function Caja() {
     }).eq('id', activeShift.id);
 
     if (!error) {
-        const msg = `🏁 *CIERRE DE CAJA - FRUTI HOME* 🏁\n\n` +
-                    `👤 *Vendedor:* ${user.name}\n` +
-                    `📥 *Base:* $${Number(activeShift.initial_balance).toLocaleString()}\n` +
-                    `💰 *Ventas Efectivo:* $${efe.toLocaleString()}\n` +
-                    `🏦 *Nequi:* $${neq.toLocaleString()}\n` +
-                    `💸 *Gastos:* $${gas.toLocaleString()}\n` +
-                    `--------------------------\n` +
-                    `💵 *Efectivo en Caja:* $${saldoEstimado.toLocaleString()}\n` +
-                    `📈 *ACUMULADO TOTAL:* $${historico.toLocaleString()}`;
+      const msg = `🏁 *CIERRE DE CAJA - COMO EN CASA HELADERÍA* 🏁\n\n` +
+                  `👤 *Vendedor:* ${user.name}\n` +
+                  `📥 *Base:* $${Number(activeShift.initial_balance).toLocaleString()}\n` +
+                  `💰 *Ventas Efectivo:* $${efe.toLocaleString()}\n` +
+                  `🏦 *Nequi:* $${neq.toLocaleString()}\n` +
+                  `💸 *Gastos:* $${gas.toLocaleString()}\n` +
+                  `--------------------------\n` +
+                  `💵 *Efectivo en Caja:* $${saldoEstimado.toLocaleString()}\n` +
+                  `📈 *ACUMULADO TOTAL:* $${historico.toLocaleString()}`;
         
         await sendTelegram(msg);
         toast.success("Caja cerrada y reporte enviado");

@@ -29,7 +29,7 @@ export default function Layout() {
         <div className="flex items-center gap-3 mb-12 px-2">
           <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🍦</div>
           <div>
-            <h1 className="text-xl font-black text-slate-900 leading-none">Fruti Home</h1>
+            <h1 className="text-xl font-black text-slate-900 leading-none">Como en Casa</h1>
             <p className="text-[10px] text-slate-400 font-bold uppercase mt-1">{user?.role === 'admin' ? 'Panel Dueño' : 'Panel Venta'}</p>
           </div>
         </div>
