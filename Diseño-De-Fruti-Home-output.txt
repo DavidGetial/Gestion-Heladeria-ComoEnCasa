@@ -5,8 +5,8 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: Diseño-De-Fruti-Home
-Generated On: 2026-05-16 01:16:50 (America/Bogota / GMT-05:00)
-Total Files Processed: 87
+Generated On: 2026-05-16 01:47:36 (America/Bogota / GMT-05:00)
+Total Files Processed: 88
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
 
@@ -119,16 +119,17 @@ PROJECT STRUCTURE
 ├── 📄 package.json (2.74 KB)
 ├── 📄 postcss.config.mjs (460 B)
 ├── 📄 README.md (1.83 KB)
+├── 📄 vercel.json (83 B)
 └── 📄 vite.config.ts (926 B)
 
 ================================================================================
 PROJECT STATISTICS
 ================================================================================
-Total Files: 87
+Total Files: 88
 Total Directories: 11
-Text Files: 86
+Text Files: 87
 Binary Files: 1
-Total Size: 490.32 KB
+Total Size: 490.4 KB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
@@ -136,7 +137,7 @@ FILE TYPES DISTRIBUTION:
 .ts             : 8
 .md             : 4
 .css            : 4
-.json           : 2
+.json           : 3
 .js             : 1
 .html           : 1
 .mjs            : 1
@@ -16169,6 +16170,33 @@ La implementación de **Fruti Home** permitió eliminar el registro manual de ve
 ---
 ⭐ **¡Apoya este proyecto dándole una estrella al repositorio!**
 
+================================================================================
+
+
+================================================================================
+FILE: vercel.json
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 83 B
+Extension: .json
+Language: json
+Location: vercel.json
+Relative Path: root
+Created: 2026-05-16 01:47:04 (America/Bogota / GMT-05:00)
+Modified: 2026-05-16 01:47:36 (America/Bogota / GMT-05:00)
+MD5: 493ac9209793531721c9e3b095e48d30
+SHA256: 4293c14432d945472112a2e2356bdad192a7f76fb1b9eb8a8a14c1385b187d40
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
 ================================================================================
 
 
