@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `Diseño-De-Fruti-Home`
-- **Generated On**: 2026-05-13 00:43:25 (America/Bogota / GMT-05:00)
+- **Generated On**: 2026-05-16 01:16:50 (America/Bogota / GMT-05:00)
 - **Total Files Processed**: 87
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -77,7 +77,7 @@
 │   │   │   │   ├── 📄 use-mobile.ts (585 B)
 │   │   │   │   └── 📄 utils.ts (169 B)
 │   │   │   ├── 📄 EditItemModal.tsx (5.01 KB)
-│   │   │   ├── 📄 Layout.tsx (2.9 KB)
+│   │   │   ├── 📄 Layout.tsx (3.03 KB)
 │   │   │   ├── 📄 PaymentModal.tsx (8.35 KB)
 │   │   │   ├── 📄 ProductCard.tsx (1.62 KB)
 │   │   │   ├── 📄 StatsCard.tsx (1.27 KB)
@@ -89,13 +89,13 @@
 │   │   ├── 📁 pages/
 │   │   │   ├── 📄 Ajustes.tsx (5.7 KB)
 │   │   │   ├── 📄 Caja.tsx (12.32 KB)
-│   │   │   ├── 📄 Cocina.tsx (6.46 KB)
-│   │   │   ├── 📄 Inventario.tsx (8.13 KB)
+│   │   │   ├── 📄 Cocina.tsx (8.78 KB)
+│   │   │   ├── 📄 Inventario.tsx (8.27 KB)
 │   │   │   ├── 📄 Login.tsx (3.35 KB)
-│   │   │   ├── 📄 Mesas.tsx (9.83 KB)
-│   │   │   ├── 📄 Pedido.tsx (8.63 KB)
+│   │   │   ├── 📄 Mesas.tsx (15.83 KB)
+│   │   │   ├── 📄 Pedido.tsx (12.34 KB)
 │   │   │   ├── 📄 Reportes.tsx (7.83 KB)
-│   │   │   └── 📄 Stats.tsx (7.47 KB)
+│   │   │   └── 📄 Stats.tsx (11.15 KB)
 │   │   ├── 📄 App.tsx (1.77 KB)
 │   │   └── 📄 routes.tsx (780 B)
 │   ├── 📁 lib/
@@ -116,7 +116,7 @@
 ├── 📄 package-lock.json (202.93 KB)
 ├── 📄 package.json (2.74 KB)
 ├── 📄 postcss.config.mjs (460 B)
-├── 📄 README.md (337 B)
+├── 📄 README.md (1.83 KB)
 └── 📄 vite.config.ts (926 B)
 ```
 
@@ -221,7 +221,7 @@
 | Total Directories | 11 |
 | Text Files | 86 |
 | Binary Files | 1 |
-| Total Size | 472.84 KB |
+| Total Size | 490.32 KB |
 
 ### 📄 File Types Distribution
 
@@ -6685,15 +6685,15 @@ export function EditItemModal({ item, onClose, onSave }: EditItemModalProps) {
 ### <a id="📄-src-app-components-layout-tsx"></a>📄 `src/app/components/Layout.tsx`
 
 **File Info:**
-- **Size**: 2.9 KB
+- **Size**: 3.03 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/components/Layout.tsx`
 - **Relative Path**: `src/app/components`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-05-13 00:42:46 (America/Bogota / GMT-05:00)
-- **MD5**: `350f99dc226755d1b518f297f3dd621f`
-- **SHA256**: `bc45b597950b54d6ba7fa311b39f0bc8a8cfbc6b178bd2cef5d0b3b88fb4f898`
+- **Modified**: 2026-05-16 01:16:49 (America/Bogota / GMT-05:00)
+- **MD5**: `05aa91bec722990652957e756fb2fd4e`
+- **SHA256**: `7cd40867e105c531ad2ac61bfd1c5cb844d269c8ec62ffe410e9aef9878addd2`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -6713,7 +6713,10 @@ export default function Layout() {
     { name: 'Mesas', path: '/', icon: <LayoutDashboard size={22} /> },
     { name: 'Cocina y Mostrador', path: '/cocina', icon: <Utensils size={22} /> },
     { name: 'Caja y Ventas', path: '/caja', icon: <Wallet size={22} /> },
-    { name: 'Inventario', path: '/inventario', icon: <Package size={22} /> },
+      /* 
+      DEJADO OCULTO EN LA APP (PERO EL CÓDIGO SIGUE VIVO AQUÍ ABAJO)
+      { name: 'Inventario', path: '/inventario', icon: Package }
+    */
   ];
 
   // MENÚ PARA ADMIN (Estrategia)
@@ -7746,7 +7749,7 @@ export function Ajustes() {
 - **Location**: `src/app/pages/Caja.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-17 15:22:45 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-05-13 00:34:42 (America/Bogota / GMT-05:00)
+- **Modified**: 2026-05-13 01:16:08 (America/Bogota / GMT-05:00)
 - **MD5**: `a133e126e3921ca67a1ecdf9a6c1172a`
 - **SHA256**: `a2fc36374abcb2f9d29e3b8dcbabeda84f05dc9670b0918b5c0515a9f14e1203`
 - **Encoding**: ASCII
@@ -7953,137 +7956,187 @@ export function Caja() {
 ### <a id="📄-src-app-pages-cocina-tsx"></a>📄 `src/app/pages/Cocina.tsx`
 
 **File Info:**
-- **Size**: 6.46 KB
+- **Size**: 8.78 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Cocina.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-17 02:20:25 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-18 17:14:02 (America/Bogota / GMT-05:00)
-- **MD5**: `168da861035371248d3e04432ba5fce8`
-- **SHA256**: `fb7f34b950646c866edf2660518c6525924db3fa356722d5ca612ddacc446bb3`
-- **Encoding**: ASCII
+- **Modified**: 2026-05-13 02:16:04 (America/Bogota / GMT-05:00)
+- **MD5**: `52ef187af626014e53f9f4d5a93d5fcf`
+- **SHA256**: `afb0aea2eabedb717df301f9ec42bff80230c65e0068c8dcd49d49acca89eb4a`
+- **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
-import { CheckCircle2, Utensils, Clock, Store, Users } from 'lucide-react';
+import { Card } from '../components/ui/card';
+import { CheckCircle2, Clock, Store, Users, Utensils } from 'lucide-react';
 import { toast } from 'sonner';
 
 export function Cocina() {
-  const [pedidos, setPedidos] = useState<any[]>([]);
+  const [orders, setOrders] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetchPedidos();
-    const ch = supabase.channel('despacho-realtime')
-      .on('postgres_changes' as any, { event: '*', schema: 'public', table: 'orders' }, () => fetchPedidos())
+    loadOrders();
+    const channel = supabase
+      .channel('cocina-live')
+      .on('postgres_changes' as any, { event: '*', schema: 'public', table: 'orders' }, () => loadOrders())
       .subscribe();
-    return () => { supabase.removeChannel(ch); };
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, []);
 
-  async function fetchPedidos() {
-    const { data } = await supabase.from('orders')
+  async function loadOrders() {
+    // CORREGIDO: Traemos tanto órdenes pendientes (mesas) como completadas de hoy (mostrador)
+    // que contengan productos que requieran preparación en cocina
+    const { data } = await supabase
+      .from('orders')
       .select('*')
-      .in('status', ['pending', 'completed'])
+      .in('status', ['pending', 'completed']) 
       .order('created_at', { ascending: true });
-    setPedidos(data || []);
+    
+    if (data) setOrders(data);
+    setLoading(false);
   }
 
-  const marcarItemServido = async (pedidoId: string, itemIdx: number) => {
-    const pedido = pedidos.find(p => p.id === pedidoId);
-    if (!pedido) return;
-    const nuevosItems = [...pedido.items];
-    nuevosItems[itemIdx].servido = true;
-    await supabase.from('orders').update({ items: nuevosItems }).eq('id', pedidoId);
+  // --- FUNCIÓN ACTUALIZADA: COMPATIBLE CON MOSTRADOR Y MESAS ---
+  const despacharProductoIndividual = async (orderId: string, itemUniqueCartId: string, tableId: number) => {
+    const order = orders.find(o => o.id === orderId);
+    if (!order) return;
 
-    const todoListo = nuevosItems.every((i: any) => i.servido === true);
-    if (todoListo && pedido.table_id !== 0 && pedido.status === 'pending') {
-      await supabase.from('tables').update({ status: 'Lista para cobrar' }).eq('id', pedido.table_id);
+    // Marcamos como servido únicamente el producto seleccionado
+    const nuevosItems = order.items.map((item: any) => {
+      if (item.uniqueCartId === itemUniqueCartId) {
+        return { ...item, servido: true };
+      }
+      return item;
+    });
+
+    const todosServidos = nuevosItems.every((item: any) => item.servido === true);
+
+    try {
+      if (tableId > 0) {
+        // LÓGICA DE MESAS
+        if (todosServidos) {
+          await supabase.from('orders').update({ items: nuevosItems }).eq('id', orderId);
+          await supabase.from('tables').update({ status: 'Lista para cobrar' }).eq('id', tableId);
+          toast.success("¡Pedido de la mesa completado!");
+        } else {
+          await supabase.from('orders').update({ items: nuevosItems }).eq('id', orderId);
+          toast.success("Plato despachado");
+        }
+      } else {
+        // LÓGICA DE MOSTRADOR: Como el estado ya es 'completed', solo actualizamos los ítems del JSON
+        // Añadimos una propiedad de control interna para ocultarlo si ya se sirvió todo
+        await supabase.from('orders').update({ 
+          items: nuevosItems,
+          notes: todosServidos ? 'despachado_mostrador' : order.notes 
+        }).eq('id', orderId);
+        
+        toast.success(todosServidos ? "¡Venta de mostrador entregada!" : "Plato despachado");
+      }
+      
+      loadOrders();
+    } catch (e) {
+      toast.error("Error al despachar el producto");
     }
-    fetchPedidos();
-    toast.success("¡Producto entregado!");
   };
 
-  // FILTROS PARA LAS DOS COLUMNAS
-  const pedidosMostrador = pedidos.filter(p => p.table_id === 0 && p.items?.some((i: any) => !i.servido));
-  const pedidosMesas = pedidos.filter(p => p.table_id !== 0 && p.items?.some((i: any) => !i.servido));
+  // FILTRADO INTELIGENTE PARA LA PANTALLA
+  // Mostrador: Muestra órdenes de mostrador (table_id = 0) que NO estén marcadas como despachadas del todo
+  const ordersMostrador = orders.filter(o => o.table_id === 0 && o.notes !== 'despachado_mostrador');
+  // Mesas: Muestra órdenes de salón (table_id > 0) que sigan pendientes de cobro/despacho
+  const ordersMesas = orders.filter(o => o.table_id > 0 && o.status === 'pending');
+
+  if (loading) return <div className="p-20 text-center font-black animate-pulse text-slate-300">CARGANDO PEDIDOS...</div>;
 
   return (
-    <div className="flex h-screen bg-[#F1F5F9] overflow-hidden">
-      
-      {/* SECCIÓN MOSTRADOR (IZQUIERDA) */}
-      <section className="flex-1 flex flex-col border-r-4 border-slate-200">
-        <div className="p-6 bg-blue-600 text-white flex items-center justify-between shadow-lg">
-          <div className="flex items-center gap-3">
-            <Store size={28} />
-            <h1 className="text-2xl font-black uppercase tracking-tighter">Mostrador (Venta Rápida)</h1>
+    <div className="flex flex-col h-full bg-[#F1F5F9] p-6 overflow-hidden">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-full">
+        
+        {/* COLUMNA MOSTRADOR */}
+        <div className="flex flex-col h-full bg-white/40 rounded-[40px] p-6 border border-white/50 backdrop-blur-sm">
+          <div className="flex justify-between items-center bg-blue-600 text-white px-8 py-5 rounded-[28px] shadow-lg mb-6">
+            <h2 className="text-xl font-black uppercase tracking-tight flex items-center gap-3"><Store size={24}/> Mostrador (Venta Rápida)</h2>
+            <span className="bg-white/20 px-4 py-1 rounded-full font-black text-sm">{ordersMostrador.length} Pedidos</span>
           </div>
-          <span className="bg-white/20 px-4 py-1 rounded-full font-bold text-sm">{pedidosMostrador.length} Pedidos</span>
-        </div>
 
-        <div className="flex-1 overflow-auto p-6 space-y-6">
-          {pedidosMostrador.map((p) => (
-            <div key={p.id} className="bg-white rounded-[32px] shadow-md border-2 border-blue-100 overflow-hidden animate-in slide-in-from-left-4">
-              <div className="bg-blue-50 px-6 py-3 flex justify-between items-center border-b">
-                <span className="font-black text-blue-600 text-xs uppercase">Ticket #{p.id.slice(0,4)}</span>
-                <span className="bg-emerald-500 text-white px-3 py-1 rounded-full font-black text-[9px] uppercase">Ya Pagado</span>
-              </div>
-              <div className="p-6 space-y-4">
-                {p.items.map((item: any, idx: number) => !item.servido && (
-                  <div key={idx} className="flex justify-between items-center bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                    <div>
-                      <p className="font-black text-slate-800">{item.quantity}x {item.name}</p>
-                      {item.sabor && <p className="text-[10px] text-blue-600 font-black uppercase">Sabor: {item.sabor}</p>}
-                    </div>
-                    <button onClick={() => marcarItemServido(p.id, idx)} className="h-10 w-10 bg-emerald-500 text-white rounded-xl flex items-center justify-center shadow-lg hover:scale-110 transition-all"><CheckCircle2 size={20}/></button>
+          <div className="flex-1 overflow-auto space-y-4 pr-2 custom-scrollbar">
+            {ordersMostrador.map(order => {
+              const itemsPendientes = order.items?.filter((item: any) => !item.servido) || [];
+              if (itemsPendientes.length === 0) return null;
+
+              return (
+                <Card key={order.id} className="p-6 rounded-[35px] border-none shadow-md bg-white space-y-4">
+                  <div className="flex justify-between items-center border-b pb-3 border-slate-100">
+                    <span className="text-xs font-black text-slate-400 uppercase">Ticket #{order.id.slice(0,4)}</span>
+                    <span className="text-xs font-bold text-blue-500 flex items-center gap-1"><Clock size={12}/> {new Date(order.created_at).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
                   </div>
-                ))}
+                  <div className="space-y-2">
+                    {itemsPendientes.map((item: any, idx: number) => (
+                      <div key={idx} className="flex justify-between items-center p-3 rounded-2xl bg-blue-50/50 font-bold text-slate-800 text-sm">
+                        <p className="flex-1">{item.quantity}x {item.displayName || item.name}</p>
+                        <button onClick={() => despacharProductoIndividual(order.id, item.uniqueCartId, 0)} className="p-2 bg-emerald-500 text-white rounded-xl hover:bg-emerald-600 transition-colors shadow-sm"><CheckCircle2 size={18}/></button>
+                      </div>
+                    ))}
+                  </div>
+                </Card>
+              );
+            })}
+            {ordersMostrador.length === 0 && (
+              <div className="h-full flex flex-col items-center justify-center text-slate-300">
+                <Utensils size={48} strokeWidth={1}/>
+                <p className="font-black text-xs uppercase tracking-widest mt-4">Sin pedidos aquí</p>
               </div>
-            </div>
-          ))}
-          {pedidosMostrador.length === 0 && <div className="h-full flex flex-col items-center justify-center opacity-20"><Store size={80} /><p className="font-black uppercase mt-4">Sin pedidos aquí</p></div>}
-        </div>
-      </section>
-
-      {/* SECCIÓN MESAS (DERECHA) */}
-      <section className="flex-1 flex flex-col">
-        <div className="p-6 bg-pink-500 text-white flex items-center justify-between shadow-lg">
-          <div className="flex items-center gap-3">
-            <Users size={28} />
-            <h1 className="text-2xl font-black uppercase tracking-tighter">Pedidos de Mesas</h1>
+            )}
           </div>
-          <span className="bg-white/20 px-4 py-1 rounded-full font-bold text-sm">{pedidosMesas.length} Pedidos</span>
         </div>
 
-        <div className="flex-1 overflow-auto p-6 space-y-6">
-          {pedidosMesas.map((p) => (
-            <div key={p.id} className="bg-white rounded-[32px] shadow-md border-2 border-pink-100 overflow-hidden animate-in slide-in-from-right-4">
-              <div className="bg-pink-50 px-6 py-3 flex justify-between items-center border-b">
-                <span className="font-black text-pink-600 text-lg uppercase">MESA {p.table_id}</span>
-                <div className="flex items-center gap-2">
-                    <Clock size={14} className="text-pink-300" />
-                    <span className="text-[10px] font-bold text-pink-400 uppercase">{new Date(p.created_at).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
-                </div>
-              </div>
-              <div className="p-6 space-y-4">
-                {p.items.map((item: any, idx: number) => !item.servido && (
-                  <div key={idx} className="flex justify-between items-center bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                    <div>
-                      <p className="font-black text-slate-800">{item.quantity}x {item.name}</p>
-                      {item.sabor && <p className="text-[10px] text-pink-600 font-black uppercase">Sabor: {item.sabor}</p>}
-                    </div>
-                    <button onClick={() => marcarItemServido(p.id, idx)} className="h-10 w-10 bg-emerald-500 text-white rounded-xl flex items-center justify-center shadow-lg hover:scale-110 transition-all"><CheckCircle2 size={20}/></button>
+        {/* COLUMNA PEDIDOS DE MESAS */}
+        <div className="flex flex-col h-full bg-white/40 rounded-[40px] p-6 border border-white/50 backdrop-blur-sm">
+          <div className="flex justify-between items-center bg-pink-500 text-white px-8 py-5 rounded-[28px] shadow-lg mb-6">
+            <h2 className="text-xl font-black uppercase tracking-tight flex items-center gap-3"><Users size={24}/> Pedidos de Mesas</h2>
+            <span className="bg-white/20 px-4 py-1 rounded-full font-black text-sm">{ordersMesas.length} Pedidos</span>
+          </div>
+
+          <div className="overflow-auto flex-1 space-y-4 pr-2 custom-scrollbar">
+            {ordersMesas.map(order => {
+              const itemsPendientes = order.items?.filter((item: any) => !item.servido) || [];
+              if (itemsPendientes.length === 0) return null;
+
+              return (
+                <Card key={order.id} className="p-6 rounded-[40px] border-none shadow-xl bg-white border-l-8 border-pink-500 space-y-4">
+                  <div className="flex justify-between items-center border-b pb-3 border-slate-100">
+                    <h3 className="text-2xl font-black text-slate-900 uppercase">Mesa {order.table_id}</h3>
+                    <span className="text-xs font-bold text-slate-400 flex items-center gap-1"><Clock size={14}/> {new Date(order.created_at).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
                   </div>
-                ))}
+                  <div className="space-y-2">
+                    {itemsPendientes.map((item: any, idx: number) => (
+                      <div key={idx} className="p-4 rounded-[22px] bg-slate-50 border border-white shadow-sm flex justify-between items-center">
+                        <p className="font-black text-slate-800 text-sm uppercase tracking-tight flex-1">{item.quantity}x {item.displayName || item.name}</p>
+                        <button onClick={() => despacharProductoIndividual(order.id, item.uniqueCartId, order.table_id)} className="w-10 h-10 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl flex items-center justify-center shadow-md shadow-emerald-100 active:scale-90 transition-all ml-4"><CheckCircle2 size={20}/></button>
+                      </div>
+                    ))}
+                  </div>
+                </Card>
+              );
+            })}
+            {ordersMesas.length === 0 && (
+              <div className="h-full flex flex-col items-center justify-center text-slate-300">
+                <Utensils size={48} strokeWidth={1}/>
+                <p className="font-black text-xs uppercase tracking-widest mt-4">Sin pedidos en mesas</p>
               </div>
-            </div>
-          ))}
-          {pedidosMesas.length === 0 && <div className="h-full flex flex-col items-center justify-center opacity-20"><Users size={80} /><p className="font-black uppercase mt-4">Mesas al día</p></div>}
+            )}
+          </div>
         </div>
-      </section>
 
+      </div>
     </div>
   );
 }
@@ -8095,15 +8148,15 @@ export function Cocina() {
 ### <a id="📄-src-app-pages-inventario-tsx"></a>📄 `src/app/pages/Inventario.tsx`
 
 **File Info:**
-- **Size**: 8.13 KB
+- **Size**: 8.27 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Inventario.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-05-13 00:43:24 (America/Bogota / GMT-05:00)
-- **MD5**: `3bf3e072554849c0301475569b0bf597`
-- **SHA256**: `a84dfec60e3ab8a6eab284598d2c3043c641959e9305b7f95e6004bd6ce04d81`
+- **Modified**: 2026-05-13 01:16:08 (America/Bogota / GMT-05:00)
+- **MD5**: `c4e591234ace1d28f6d48237fe50f67e`
+- **SHA256**: `db32e494a3d52c88e7999d6d2091eb12795d3ca4df0220394bed3cbd01904c6d`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8264,7 +8317,7 @@ export function Inventario() {
 - **Location**: `src/app/pages/Login.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-18 18:04:53 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-05-13 00:39:47 (America/Bogota / GMT-05:00)
+- **Modified**: 2026-05-13 01:16:08 (America/Bogota / GMT-05:00)
 - **MD5**: `34c81a12e4a982b973612ab03fb9fe24`
 - **SHA256**: `332df4b28fbf8c845b3a4e0da3bffa4a5287d3e71c46e3d460da583758862eae`
 - **Encoding**: ASCII
@@ -8342,16 +8395,16 @@ export function Login() {
 ### <a id="📄-src-app-pages-mesas-tsx"></a>📄 `src/app/pages/Mesas.tsx`
 
 **File Info:**
-- **Size**: 9.83 KB
+- **Size**: 15.83 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Mesas.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-05-13 00:38:29 (America/Bogota / GMT-05:00)
-- **MD5**: `6577fc791369019ebc0b30a0cbe3918c`
-- **SHA256**: `5e7e2e644900c414e66bbc116ea1cbd7a2a6a2875ebf6f342c10bb3206d52e26`
-- **Encoding**: ASCII
+- **Modified**: 2026-05-16 00:59:36 (America/Bogota / GMT-05:00)
+- **MD5**: `786e22d5f29fa9bdf311fe6068983d0e`
+- **SHA256**: `b7b05be6cb41230d8434123d7a2e773883cd50064c08694292d24b23562a0651`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -8362,9 +8415,21 @@ import { supabase } from '../../lib/supabase';
 import { useAuth } from '../context/AuthContext';
 import { Button } from '../components/ui/button';
 import { sendTelegram } from '../../lib/telegram';
-import { ShoppingBag, Trash2, Banknote, CreditCard, Search, Plus, Minus, AlertCircle, Coffee, CheckCircle2, Clock } from 'lucide-react';
+import { 
+  ShoppingBag, Trash2, Banknote, CreditCard, 
+  Search, Plus, Minus, AlertCircle, Coffee, CheckCircle2, Clock 
+} from 'lucide-react';
 import { toast } from 'sonner';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog";
+
+const SABORES_HELADO = [
+  { id: '1', name: 'Vainilla Chips' },
+  { id: '2', name: 'Chocolate Suizo' },
+  { id: '3', name: 'Fresa Silvestre' },
+  { id: '4', name: 'Ron con Pasas' },
+  { id: '5', name: 'Oreo Cream' },
+  { id: '6', name: 'Guanábana' }
+];
 
 export function Mesas() {
   const navigate = useNavigate();
@@ -8376,9 +8441,14 @@ export function Mesas() {
   const [showNequi, setShowNequi] = useState(false);
   const [refNequi, setRefNequi] = useState('');
   const [showNoShiftModal, setShowNoShiftModal] = useState(false);
+  const [showMonthBlock, setShowMonthBlock] = useState(false);
+  const [adminPass, setAdminPass] = useState('');
+  const [showFlavorModal, setShowFlavorModal] = useState(false);
+  const [pendingProduct, setPendingProduct] = useState<any>(null);
 
   useEffect(() => {
     load();
+    checkEndOfMonth();
     const sub = supabase.channel('salon-simple').on('postgres_changes' as any, { event: '*', schema: 'public', table: 'tables' }, () => load()).subscribe();
     return () => { supabase.removeChannel(sub); };
   }, []);
@@ -8390,21 +8460,63 @@ export function Mesas() {
     if (p) setProducts(p);
   }
 
-  const addToCart = (p: any) => {
+  async function checkEndOfMonth() {
+    const today = new Date();
+    if (today.getDate() === 1) {
+      const { data } = await supabase.from('orders').select('created_at').eq('status', 'completed').order('created_at', { ascending: false }).limit(1);
+      if (data && data.length > 0) {
+        const orderDate = new Date(data[0].created_at);
+        if (orderDate.getMonth() !== today.getMonth()) {
+          setShowMonthBlock(true);
+        }
+      }
+    }
+  }
+
+  const handleForcedReset = async () => {
+    if (adminPass !== '1080044879') {
+      return toast.error("Contraseña incorrecta de Administrador");
+    }
+    await supabase.from('orders').delete().eq('status', 'completed');
+    await supabase.from('cash_movements').delete();
+    sendTelegram(`⚠️ *CIERRE AUTOMÁTICO DE MES EJECUTADO*\nEl sistema detectó cambio de mes y fue desbloqueado usando la clave maestra.`);
+    toast.success("Sistema listo para el nuevo mes");
+    setShowMonthBlock(false);
+    setAdminPass('');
+    load();
+  };
+
+  const handleProductSelect = (p: any) => {
     if (!activeShift) { setShowNoShiftModal(true); return; }
+    if (p.requires_flavor) {
+      setPendingProduct(p);
+      setShowFlavorModal(true);
+    } else {
+      executeAddToCart(p, null);
+    }
+  };
+
+  const executeAddToCart = (p: any, flavorName: string | null) => {
     setCart(prev => {
-      const exist = prev.find(item => item.id === p.id);
-      if (exist) return prev.map(item => item.id === p.id ? { ...item, quantity: item.quantity + 1 } : item);
-      return [...prev, { ...p, quantity: 1 }];
+      const uniqueCartId = flavorName ? `${p.id}-${flavorName}` : `${p.id}-regular`;
+      const exist = prev.find(item => item.uniqueCartId === uniqueCartId);
+      const displayName = flavorName ? `${p.name} (${flavorName})` : p.name;
+
+      if (exist) {
+        return prev.map(item => item.uniqueCartId === uniqueCartId ? { ...item, quantity: item.quantity + 1 } : item);
+      }
+      return [...prev, { ...p, uniqueCartId, quantity: 1, chosenFlavor: flavorName, displayName }];
     });
+    setShowFlavorModal(false);
+    setPendingProduct(null);
   };
 
-  const updateQty = (id: string, delta: number) => {
-    setCart(prev => prev.map(item => item.id === id ? { ...item, quantity: item.quantity + delta } : item).filter(i => i.quantity > 0));
+  const updateQty = (uniqueCartId: string, delta: number) => {
+    setCart(prev => prev.map(item => item.uniqueCartId === uniqueCartId ? { ...item, quantity: item.quantity + delta } : item).filter(i => i.quantity > 0));
   };
 
-  const removeItem = (id: string) => {
-    setCart(prev => prev.filter(i => i.id !== id));
+  const removeItem = (uniqueCartId: string) => {
+    setCart(prev => prev.filter(i => i.uniqueCartId !== uniqueCartId));
     toast.info("Producto eliminado");
   };
 
@@ -8417,7 +8529,7 @@ export function Mesas() {
     if (!error) {
       await supabase.from('cash_movements').insert([{ shift_id: activeShift.id, type: 'venta', amount: totalFinal, description: 'Venta Mostrador', payment_method: metodo }]);
       if (metodo === 'Transferencia') {
-        const itemsTxt = cart.map(i => `• ${i.quantity}x ${i.name}`).join('\n');
+        const itemsTxt = cart.map(i => `• ${i.quantity}x ${i.displayName}`).join('\n');
         sendTelegram(`📱 *PAGO NEQUI - COMO EN CASA HELADERÍA*\n👤 *Vendedor:* ${user.name}\n--------------------------\n${itemsTxt}\n--------------------------\n💰 *Total:* $${totalFinal.toLocaleString()}\n🔢 *Ref:* ****${refNequi}`);
       }
       toast.success("Venta Exitosa");
@@ -8432,18 +8544,50 @@ export function Mesas() {
       <div className="flex-1 p-10 overflow-auto border-r border-slate-100">
         <div className="mb-12"><h1 className="text-5xl font-black text-slate-900 uppercase tracking-tighter">Como en Casa</h1></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {tables.map((t) => (
-            <div key={t.id} onClick={() => activeShift ? navigate(`/pedido/${t.id}`) : setShowNoShiftModal(true)} className={`p-8 rounded-[45px] border-4 transition-all hover:scale-[1.03] cursor-pointer shadow-xl ${t.status === 'En preparación' ? 'bg-amber-50 border-amber-200' : 'bg-white border-transparent'}`}>
-              <div className="flex justify-between items-start mb-6">
-                <div className="w-16 h-16 rounded-3xl bg-slate-50 flex items-center justify-center text-2xl font-black">{t.id}</div>
-                {t.status === 'En preparación' ? <Clock className="text-amber-500 animate-pulse" /> : <Coffee className="text-slate-200" />}
+          {tables.map((t) => {
+            let bgClass = "bg-white border-transparent text-slate-900";
+            let badgeClass = "bg-slate-50 text-slate-400";
+            let iconColor = "text-slate-200";
+            let statusTextClass = "text-slate-300";
+
+            if (t.status === 'En preparación') {
+              bgClass = "bg-amber-400 border-amber-500 text-white shadow-xl shadow-amber-100";
+              badgeClass = "bg-white/20 text-white shadow-inner";
+              iconColor = "text-white/90";
+              statusTextClass = "text-white/80";
+            } else if (t.status === 'Lista para cobrar') {
+              bgClass = "bg-emerald-500 border-emerald-600 text-white shadow-xl shadow-emerald-100";
+              badgeClass = "bg-white/20 text-white shadow-inner";
+              iconColor = "text-white/90";
+              statusTextClass = "text-white/80";
+            }
+
+            return (
+              <div 
+                key={t.id} 
+                onClick={() => { if(!showMonthBlock) { activeShift ? navigate(`/pedido/${t.id}`) : setShowNoShiftModal(true); } }} 
+                className={`p-8 rounded-[45px] border-4 transition-all duration-300 hover:scale-[1.03] cursor-pointer shadow-xl ${bgClass}`}
+              >
+                <div className="flex justify-between items-start mb-6">
+                  <div className={`w-16 h-16 rounded-3xl flex items-center justify-center text-2xl font-black ${badgeClass}`}>
+                    {t.id}
+                  </div>
+                  {t.status === 'En preparación' ? (
+                    <Clock className={`${iconColor} animate-pulse`} size={24} />
+                  ) : t.status === 'Lista para cobrar' ? (
+                    <CheckCircle2 className={iconColor} size={24} />
+                  ) : (
+                    <Coffee className={iconColor} size={24} />
+                  )}
+                </div>
+                <p className="font-black text-3xl tracking-tighter">${Number(t.total_actual).toLocaleString()}</p>
+                <p className={`font-black text-[10px] uppercase mt-2 tracking-widest ${statusTextClass}`}>{t.status}</p>
               </div>
-              <p className="font-black text-slate-900 text-3xl tracking-tighter">${Number(t.total_actual).toLocaleString()}</p>
-              <p className="font-black text-[10px] uppercase mt-2 text-slate-300">{t.status}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
+
       <aside className="w-[520px] bg-white p-10 flex flex-col shadow-2xl relative z-50">
         <div className="flex justify-between items-center mb-8"><h2 className="text-3xl font-black text-slate-900 uppercase tracking-tighter">Mostrador</h2>{cart.length > 0 && <button onClick={() => setCart([])} className="p-3 bg-red-50 text-red-500 rounded-2xl hover:bg-red-500 hover:text-white transition-all"><Trash2 size={20}/></button>}</div>
         <div className="relative mb-8">
@@ -8452,31 +8596,46 @@ export function Mesas() {
         <div className="flex-1 overflow-auto space-y-4 pr-2 custom-scrollbar">
           <div className="grid grid-cols-2 gap-3 mb-6">
             {products.filter(p => p.name.toLowerCase().includes(search.toLowerCase())).slice(0, 4).map(p => (
-              <button key={p.id} onClick={() => addToCart(p)} className="p-4 bg-white border-2 border-slate-100 rounded-[22px] font-black text-[11px] uppercase text-slate-600 hover:border-blue-400 hover:text-blue-600 transition-all text-left truncate shadow-sm">{p.name}</button>
+              <button key={p.id} onClick={() => handleProductSelect(p)} className="p-4 bg-white border-2 border-slate-100 rounded-[22px] font-black text-[11px] uppercase text-slate-600 hover:border-blue-400 hover:text-blue-600 transition-all text-left flex flex-col shadow-sm">
+                <span>{p.name}</span>
+                {p.requires_flavor && <span className="text-[9px] text-pink-500 font-bold mt-1">✨ Requiere Sabor</span>}
+              </button>
             ))}
           </div>
           {cart.map((item) => (
-            <div key={item.id} className="bg-slate-50 p-5 rounded-[30px] flex flex-col gap-2 border border-white shadow-sm">
+            <div key={item.uniqueCartId} className="bg-slate-50 p-5 rounded-[30px] flex flex-col gap-2 border border-white shadow-sm">
               <div className="flex justify-between items-center">
-                <div className="flex-1"><p className="font-black text-slate-800 text-sm uppercase">{item.name}</p><p className="text-blue-500 font-bold text-xs">${item.price.toLocaleString()}</p></div>
+                <div className="flex-1"><p className="font-black text-slate-800 text-sm uppercase leading-tight">{item.displayName}</p><p className="text-blue-500 font-bold text-xs">${item.price.toLocaleString()}</p></div>
                 <div className="flex items-center gap-4 bg-white p-2 rounded-2xl border border-slate-100 shadow-inner">
-                  <button onClick={() => updateQty(item.id, -1)} className="text-slate-300 hover:text-red-500"><Minus size={16}/></button>
+                  <button onClick={() => updateQty(item.uniqueCartId, -1)} className="text-slate-300 hover:text-red-500"><Minus size={16}/></button>
                   <span className="font-black text-lg w-6 text-center text-slate-900">{item.quantity}</span>
-                  <button onClick={() => updateQty(item.id, 1)} className="text-slate-300 hover:text-blue-600"><Plus size={16}/></button>
+                  <button onClick={() => updateQty(item.uniqueCartId, 1)} className="text-slate-300 hover:text-blue-600"><Plus size={16}/></button>
                 </div>
               </div>
-              <button onClick={() => removeItem(item.id)} className="text-[9px] font-black text-red-400 uppercase flex items-center gap-1 hover:text-red-600 ml-1"><Trash2 size={12} /> Quitar</button>
+              <button onClick={() => removeItem(item.uniqueCartId)} className="text-[9px] font-black text-red-400 uppercase flex items-center gap-1 hover:text-red-600 ml-1"><Trash2 size={12} /> Quitar</button>
             </div>
           ))}
         </div>
         <div className="pt-8 border-t-4 border-slate-50 mt-6 space-y-6">
           <div className="flex justify-between items-end px-4"><span className="text-slate-400 font-black text-xs uppercase tracking-widest">Total Pagar</span><span className="text-6xl font-black text-slate-900 tracking-tighter">${totalFinal.toLocaleString()}</span></div>
           <div className="grid grid-cols-2 gap-4">
-            <button onClick={() => finalizarVenta('Efectivo')} disabled={cart.length === 0} className="h-24 bg-emerald-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl transition-all active:scale-95">Efectivo</button>
-            <button onClick={() => setShowNequi(true)} disabled={cart.length === 0} className="h-24 bg-blue-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl transition-all active:scale-95">Nequi</button>
+            <button onClick={() => finalizarVenta('Efectivo')} disabled={cart.length === 0 || showMonthBlock} className="h-24 bg-emerald-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl">Efectivo</button>
+            <button onClick={() => setShowNequi(true)} disabled={cart.length === 0 || showMonthBlock} className="h-24 bg-blue-500 text-white rounded-[35px] font-black uppercase text-xs shadow-xl">Nequi</button>
           </div>
         </div>
       </aside>
+
+      <Dialog open={showFlavorModal} onOpenChange={setShowFlavorModal}>
+        <DialogContent className="rounded-[45px] p-10 bg-white border-none shadow-2xl max-w-md">
+          <DialogHeader><DialogTitle className="text-center text-2xl font-black uppercase text-slate-900">Sabor de Helado</DialogTitle><DialogDescription className="text-center font-bold text-slate-400 text-xs uppercase mt-1">Elige la bola para mostrador</DialogDescription></DialogHeader>
+          <div className="grid grid-cols-2 gap-3 mt-6">
+            {SABORES_HELADO.map((f) => (
+              <button key={f.id} onClick={() => executeAddToCart(pendingProduct, f.name)} className="p-4 bg-slate-50 hover:bg-blue-600 hover:text-white rounded-2xl font-black text-xs uppercase text-slate-700 transition-all text-center border shadow-sm">{f.name}</button>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
+
       <Dialog open={showNequi} onOpenChange={setShowNequi}>
         <DialogContent className="rounded-[50px] p-12 bg-white border-none shadow-2xl max-w-[400px]">
           <DialogHeader><DialogTitle className="text-center text-3xl font-black uppercase tracking-tighter">Referencia Nequi</DialogTitle></DialogHeader>
@@ -8486,12 +8645,33 @@ export function Mesas() {
           </div>
         </DialogContent>
       </Dialog>
+
       <Dialog open={showNoShiftModal} onOpenChange={setShowNoShiftModal}>
         <DialogContent className="rounded-[50px] p-12 bg-white text-center shadow-2xl max-w-[420px] border-none">
           <AlertCircle size={56} className="text-red-500 mx-auto mb-8 animate-bounce" />
           <DialogHeader><DialogTitle className="text-3xl font-black uppercase text-slate-900 tracking-tighter">¡Caja Cerrada!</DialogTitle></DialogHeader>
           <p className="text-slate-500 font-medium mt-4">Abre el turno en la pestaña de <span className="font-black text-blue-600">Caja</span> antes de vender.</p>
           <Button onClick={() => navigate('/caja')} className="w-full h-20 bg-slate-900 text-white rounded-[30px] font-black text-lg uppercase mt-10 shadow-2xl">Ir a abrir caja ahora</Button>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={showMonthBlock} onOpenChange={setShowMonthBlock}>
+        <DialogContent className="rounded-[50px] p-12 bg-white text-center shadow-2xl max-w-[440px] border-none">
+          <div className="w-16 h-16 bg-red-100 text-red-500 rounded-full flex items-center justify-center mx-auto mb-6 animate-pulse">
+            <span className="text-2xl">🔒</span>
+          </div>
+          <DialogHeader><DialogTitle className="text-3xl font-black uppercase text-slate-900 tracking-tight">Cierre de Mes Mandatorio</DialogTitle></DialogHeader>
+          <p className="text-slate-500 font-medium text-sm mt-4">Se ha detectado un cambio de mes. Las ventas deben ser reiniciadas antes de continuar operando el POS.</p>
+          <div className="mt-6 space-y-4">
+            <input 
+              type="password" 
+              className="w-full p-5 bg-slate-50 rounded-[20px] text-2xl font-black text-center text-slate-800 outline-none border border-slate-200 shadow-inner" 
+              placeholder="••••••••" 
+              value={adminPass} 
+              onChange={e => setAdminPass(e.target.value)} 
+            />
+            <Button onClick={handleForcedReset} className="w-full h-16 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-wider shadow-lg">Desbloquear Sistema</Button>
+          </div>
         </DialogContent>
       </Dialog>
     </div>
@@ -8505,16 +8685,16 @@ export function Mesas() {
 ### <a id="📄-src-app-pages-pedido-tsx"></a>📄 `src/app/pages/Pedido.tsx`
 
 **File Info:**
-- **Size**: 8.63 KB
+- **Size**: 12.34 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Pedido.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-21 02:46:32 (America/Bogota / GMT-05:00)
-- **MD5**: `347e05cf62eddbd67614ac824a222690`
-- **SHA256**: `1bbb169a12ba0351761baba63d485df90c9a189648b769b3412c0be4928bf360`
-- **Encoding**: ASCII
+- **Modified**: 2026-05-13 02:07:35 (America/Bogota / GMT-05:00)
+- **MD5**: `6ebf39202e8cb9a66e59eeb20ca7ba06`
+- **SHA256**: `f71d12156e6f4949f867e773b440ff25ad29c348fab10e4c608f64515a76e556`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -8528,7 +8708,34 @@ import { Card } from '../components/ui/card';
 import { ChevronLeft, ShoppingBag, Banknote, CreditCard, Search, Plus, Minus, AlertCircle, UtensilsCrossed, Trash2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { sendTelegram } from '../../lib/telegram';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "../components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog";
+
+// SABORES FIJOS EN CÓDIGO
+const SABORES_HELADO = [
+  { id: '1', name: 'Vainilla' },
+  { id: '2', name: 'Fresa' },
+  { id: '3', name: 'Chocolate' },
+  { id: '4', name: 'Napolitano' },
+  { id: '5', name: 'Vainilla Fresa' },
+  { id: '6', name: 'Veteado de Mora' },
+  { id: '7', name: 'Cookies & Cream' },
+  { id: '8', name: 'Frutos Rojos' },
+  { id: '9', name: 'Vainilla Selecta' },
+  { id: '10', name: 'Placer Macadamia' },
+  { id: '11', name: 'Brownie & Cookies' },
+  { id: '12', name: 'Fondue de Chocolate' },
+  { id: '13', name: 'Chococono' },
+  { id: '14', name: 'Bocatto Brownie Caramelo' },
+  { id: '15', name: 'Bocatto Fresa' },
+  { id: '16', name: 'Bocatto Tres Leches' },
+  { id: '17', name: 'Aloha Limón' },
+  { id: '18', name: 'Aloha Mix Frutos Rojos' },
+  { id: '19', name: 'Paleta Jet' },
+  { id: '20', name: 'Galleta Jumbo' },
+  { id: '21', name: 'Casero Yogurt Melocotón' },
+  { id: '22', name: 'Casero Yogurt Fresa' },
+  { id: '23', name: 'Tosh Piña' }
+];
 
 export function Pedido() {
   const { id: mesaId } = useParams();
@@ -8544,6 +8751,10 @@ export function Pedido() {
   const [showNoShiftModal, setShowNoShiftModal] = useState(false);
   const [saving, setSaving] = useState(false);
 
+  // Estados para sabores
+  const [showFlavorModal, setShowFlavorModal] = useState(false);
+  const [pendingProduct, setPendingProduct] = useState<any>(null);
+
   useEffect(() => {
     if (!activeShift) setShowNoShiftModal(true);
     load();
@@ -8556,22 +8767,39 @@ export function Pedido() {
     if (o) setPrevItems(o.items || []);
   }
 
-  const addToCart = (p: any) => {
+  const handleProductSelect = (p: any) => {
+    if (p.requires_flavor) {
+      setPendingProduct(p);
+      setShowFlavorModal(true);
+    } else {
+      executeAddToCart(p, null);
+    }
+  };
+
+  const executeAddToCart = (p: any, flavorName: string | null) => {
     setCart(prev => {
-      const exist = prev.find(item => item.id === p.id);
-      if (exist) return prev.map(item => item.id === p.id ? { ...item, quantity: item.quantity + 1 } : item);
-      return [...prev, { ...p, quantity: 1 }];
+      const uniqueCartId = flavorName ? `${p.id}-${flavorName}` : `${p.id}-regular`;
+      const exist = prev.find(item => item.uniqueCartId === uniqueCartId);
+      const displayName = flavorName ? `${p.name} (${flavorName})` : p.name;
+
+      if (exist) {
+        return prev.map(item => item.uniqueCartId === uniqueCartId ? { ...item, quantity: item.quantity + 1 } : item);
+      }
+      return [...prev, { ...p, uniqueCartId, quantity: 1, chosenFlavor: flavorName, displayName }];
     });
+    setShowFlavorModal(false);
+    setPendingProduct(null);
   };
 
-  const updateQty = (id: string, delta: number, isPrev: boolean) => {
+  const updateQty = (uniqueCartId: string, delta: number, isPrev: boolean) => {
     const target = isPrev ? setPrevItems : setCart;
-    target((prev: any[]) => prev.map(item => item.id === id ? { ...item, quantity: item.quantity + delta } : item).filter(i => i.quantity > 0));
+    target((prev: any[]) => prev.map(item => item.uniqueCartId === uniqueCartId ? { ...item, quantity: item.quantity + delta } : item).filter(i => i.quantity > 0));
   };
 
-  const removeItem = (id: string, isPrev: boolean) => {
-    if (isPrev) setPrevItems(prev => prev.filter(i => i.id !== id));
-    else setCart(prev => prev.filter(i => i.id !== id));
+  const removeItem = (uniqueCartId: string, isPrev: boolean) => {
+    if (isPrev) setPrevItems(prev => prev.filter(i => i.uniqueCartId !== uniqueCartId));
+    else setCart(prev => prev.filter(i => i.uniqueCartId !== uniqueCartId));
+    toast.info("Producto eliminado");
   };
 
   const totalPagar = [...prevItems, ...cart].reduce((acc, i) => acc + (i.price * i.quantity), 0);
@@ -8600,8 +8828,8 @@ export function Pedido() {
       await supabase.from('tables').update({ status: 'Vacía', total_actual: 0 }).eq('id', mesaId);
       
       if (metodo === 'Transferencia') {
-        const itemsTxt = [...prevItems, ...cart].map(i => `• ${i.quantity}x ${i.name}`).join('\n');
-        sendTelegram(`📱 *PAGO NEQUI - MESA ${mesaId}*\n👤 Vendedor: ${user.name}\n${itemsTxt}\n💰 Total: $${totalPagar.toLocaleString()}\n🔢 Ref: ****${refNequi}`);
+        const itemsTxt = [...prevItems, ...cart].map(i => `• ${i.quantity}x ${i.displayName}`).join('\n');
+        sendTelegram(`📱 *PAGO NEQUI - COMO EN CASA*\n👤 Vendedor: ${user.name}\n${itemsTxt}\n💰 Total: $${totalPagar.toLocaleString()}\n🔢 Ref: ****${refNequi}`);
       }
       toast.success("Mesa liberada");
       navigate('/');
@@ -8615,30 +8843,46 @@ export function Pedido() {
         <div className="relative mb-10"><Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-300" size={20}/><input type="text" placeholder="Buscar..." className="w-full pl-14 pr-6 py-5 bg-white rounded-[25px] shadow-sm border-none font-bold outline-none" onChange={e => setSearch(e.target.value)} /></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.filter(p => p.name.toLowerCase().includes(search.toLowerCase())).map(p => (
-            <Card key={p.id} onClick={() => addToCart(p)} className="p-8 bg-white rounded-[40px] border-none shadow-xl hover:scale-[1.02] cursor-pointer transition-all">
+            <Card key={p.id} onClick={() => handleProductSelect(p)} className="p-8 bg-white rounded-[40px] border-none shadow-xl hover:scale-[1.02] cursor-pointer transition-all">
               <span className="text-[9px] bg-blue-50 text-blue-600 px-3 py-1 rounded-full font-black uppercase">{p.category}</span>
-              <p className="font-black text-slate-800 text-xl mt-4 leading-tight">{p.name}</p><p className="text-3xl font-black text-slate-900 mt-4">${p.price.toLocaleString()}</p>
+              <p className="font-black text-slate-800 text-xl mt-4 leading-tight">{p.name}</p>
+              {p.requires_flavor && <p className="text-[10px] text-pink-500 font-bold mt-1">✨ Elige Sabor</p>}
+              <p className="text-3xl font-black text-slate-900 mt-4">${p.price.toLocaleString()}</p>
             </Card>
           ))}
         </div>
       </div>
 
       <aside className="w-[500px] bg-white p-10 flex flex-col shadow-2xl relative z-50">
-        <h2 className="text-2xl font-black mb-8 uppercase flex items-center gap-3"><ShoppingBag className="text-blue-600"/> Cuenta Mesa</h2>
+        <h2 className="text-2xl font-black mb-8 uppercase tracking-tighter flex items-center gap-3"><ShoppingBag className="text-blue-600"/> Cuenta Mesa</h2>
         <div className="flex-1 overflow-auto space-y-6">
           {[...prevItems, ...cart].map((item, idx) => (
             <div key={idx} className="bg-slate-50 p-5 rounded-[30px] flex justify-between items-center border border-white">
-              <div className="flex-1"><p className="font-bold text-slate-700 text-sm">{item.name}</p><button onClick={() => removeItem(item.id, cart.some(c => c.id === item.id) ? false : true)} className="text-[9px] font-black text-red-400 uppercase mt-1 flex items-center gap-1"><Trash2 size={10}/> Quitar</button></div>
-              <div className="flex items-center gap-4 bg-white p-2 rounded-2xl border"><button onClick={() => updateQty(item.id, -1, cart.some(c => c.id === item.id) ? false : true)}><Minus size={16}/></button><span className="font-black text-lg">{item.quantity}</span><button onClick={() => updateQty(item.id, 1, cart.some(c => c.id === item.id) ? false : true)}><Plus size={16}/></button></div>
+              <div className="flex-1"><p className="font-bold text-slate-700 text-sm uppercase leading-none">{item.displayName}</p><button onClick={() => removeItem(item.uniqueCartId, cart.some(c => c.id === item.id) ? false : true)} className="text-[9px] font-black text-red-400 uppercase mt-1 flex items-center gap-1"><Trash2 size={10}/> Quitar</button></div>
+              <div className="flex items-center gap-4 bg-white p-2 rounded-2xl border"><button onClick={() => updateQty(item.uniqueCartId, -1, cart.some(c => c.id === item.id) ? false : true)}><Minus size={16}/></button><span className="font-black text-lg">{item.quantity}</span><button onClick={() => updateQty(item.uniqueCartId, 1, cart.some(c => c.id === item.id) ? false : true)}><Plus size={16}/></button></div>
             </div>
           ))}
         </div>
         <div className="pt-8 border-t-4 border-slate-50 mt-6 space-y-6"><div className="flex justify-between items-end px-4"><span className="text-slate-400 font-black text-xs">Total</span><span className="text-6xl font-black text-slate-900 tracking-tighter">${totalPagar.toLocaleString()}</span></div>
-          <div className="flex flex-col gap-3"><Button onClick={enviarACocina} disabled={cart.length === 0 || saving} className="h-20 bg-blue-600 text-white rounded-[35px] font-black text-xl shadow-xl uppercase hover:bg-blue-700">{saving ? "ENVIANDO..." : "ENVIAR A COCINA"}</Button><div className="grid grid-cols-2 gap-3"><button onClick={() => finalizarCobro('Efectivo')} className="h-16 bg-emerald-500 text-white rounded-3xl font-black uppercase text-[10px]">Efectivo</button><button onClick={() => setShowNequi(true)} className="h-16 bg-pink-500 text-white rounded-3xl font-black uppercase text-[10px]">Nequi</button></div></div>
+          <div className="flex flex-col gap-3"><Button onClick={enviarACocina} disabled={cart.length === 0 && prevItems.length === 0 || saving} className="h-20 bg-blue-600 text-white rounded-[35px] font-black text-xl shadow-xl uppercase hover:bg-blue-700">{saving ? "ENVIANDO..." : "ENVIAR A COCINA"}</Button><div className="grid grid-cols-2 gap-3"><button onClick={() => finalizarCobro('Efectivo')} className="h-16 bg-emerald-500 text-white rounded-3xl font-black uppercase text-[10px]">Efectivo</button><button onClick={() => setShowNequi(true)} className="h-16 bg-pink-500 text-white rounded-3xl font-black uppercase text-[10px]">Nequi</button></div></div>
         </div>
       </aside>
 
-      <Dialog open={showNequi} onOpenChange={setShowNequi}><DialogContent className="rounded-[50px] p-12 bg-white shadow-2xl max-w-[400px] border-none"><DialogHeader><DialogTitle className="text-center text-3xl font-black uppercase">Ref. Nequi</DialogTitle></DialogHeader><div className="mt-8 space-y-8 text-center"><input type="number" className="w-full p-10 bg-slate-50 rounded-[35px] text-6xl font-black text-center text-blue-600 outline-none" placeholder="0000" value={refNequi} onChange={e => setRefNequi(e.target.value.slice(0,4))} /><Button onClick={() => finalizarCobro('Transferencia')} className="w-full h-20 bg-blue-600 text-white rounded-[28px] font-black text-xl uppercase shadow-xl">Confirmar Cobro</Button></div></DialogContent></Dialog>
+      {/* MODAL SABORES FIJOS */}
+      <Dialog open={showFlavorModal} onOpenChange={setShowFlavorModal}>
+        <DialogContent className="rounded-[45px] p-10 bg-white border-none shadow-2xl max-w-md">
+          <DialogHeader><DialogTitle className="text-center text-2xl font-black uppercase text-slate-900">Sabor de Helado</DialogTitle><DialogDescription className="text-center font-bold text-slate-400 text-xs uppercase mt-1">Elige la bola para la mesa</DialogDescription></DialogHeader>
+          <div className="grid grid-cols-2 gap-3 mt-6">
+            {SABORES_HELADO.map((f) => (
+              <button key={f.id} onClick={() => executeAddToCart(pendingProduct, f.name)} className="p-4 bg-slate-50 hover:bg-blue-600 hover:text-white rounded-2xl font-black text-xs uppercase text-slate-700 transition-all text-center border shadow-sm">{f.name}</button>
+            ))}
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={showNequi} onOpenChange={setShowNequi}><DialogContent className="rounded-[50px] p-12 bg-white shadow-2xl max-w-[400px] border-none"><DialogHeader><DialogTitle className="text-center text-3xl font-black uppercase">Ref. Nequi</DialogTitle></DialogHeader><div className="mt-8 space-y-8 text-center"><input type="number" className="w-full p-10 bg-slate-50 rounded-[35px] text-6xl font-black text-center text-blue-600 outline-none" placeholder="0000" value={refNequi} onChange={e => setRefNequi(e.target.value.slice(0,4))} /><Button onClick={() => { setShowNequi(false); finalizarCobro('Transferencia'); }} className="w-full h-20 bg-blue-600 text-white rounded-[28px] font-black text-xl uppercase shadow-xl">Confirmar Cobro</Button></div></DialogContent></Dialog>
+      
+      <Dialog open={showNoShiftModal} onOpenChange={setShowNoShiftModal}><DialogContent className="rounded-[50px] p-12 bg-white text-center shadow-2xl max-w-[420px] border-none"><AlertCircle size={56} className="text-red-500 mx-auto mb-8 animate-bounce" /><DialogHeader><DialogTitle className="text-3xl font-black uppercase text-slate-900 tracking-tighter">¡Caja Cerrada!</DialogTitle></DialogHeader><p className="text-slate-500 font-medium mt-4">Abre el turno en la pestaña de <span className="font-black text-blue-600">Caja</span> antes de atender.</p><Button onClick={() => navigate('/caja')} className="w-full h-20 bg-slate-900 text-white rounded-[30px] font-black text-lg uppercase mt-10 shadow-2xl">Ir a abrir caja</Button></DialogContent></Dialog>
     </div>
   );
 }
@@ -8861,15 +9105,15 @@ export function Reportes() {
 ### <a id="📄-src-app-pages-stats-tsx"></a>📄 `src/app/pages/Stats.tsx`
 
 **File Info:**
-- **Size**: 7.47 KB
+- **Size**: 11.15 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/app/pages/Stats.tsx`
 - **Relative Path**: `src/app/pages`
 - **Created**: 2026-04-18 18:41:20 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-05-13 00:39:55 (America/Bogota / GMT-05:00)
-- **MD5**: `25e7d62fb2926ffc137e5251094a8e7b`
-- **SHA256**: `73668ad6c3b1a3b288a997d73ef510efabd9df31a10f3d6e545d1836b4f56ecc`
+- **Modified**: 2026-05-16 01:00:36 (America/Bogota / GMT-05:00)
+- **MD5**: `30f781b4c4b886af9f6cc59bf64b1512`
+- **SHA256**: `d123fe5505894f4c5546000096e7f94d579d298e11c00727d48dda1110329ec4`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8878,88 +9122,155 @@ export function Reportes() {
 import { useState, useEffect } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Card } from '../components/ui/card';
-import { DollarSign, TrendingUp, Users, Calendar, ArrowUpRight, ShoppingBag, Star } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { sendTelegram } from '../../lib/telegram';
+import { toast } from 'sonner';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "../components/ui/dialog";
+import { DollarSign, Calendar, ArrowUpRight, ShoppingBag, TrendingUp, Star } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 export function Stats() {
   const [stats, setStats] = useState({ totalSales: 0, cash: 0, nequi: 0, ordersCount: 0, dailyAverage: 0, projection: 0 });
   const [chartData, setChartData] = useState<any[]>([]);
   const [topProducts, setTopProducts] = useState<any[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [password, setPassword] = useState('');
 
   useEffect(() => {
-    async function loadStats() {
-      const { data } = await supabase.from('orders').select('*').eq('status', 'completed');
-      if (data) {
-        const total = data.reduce((acc, o) => acc + Number(o.total), 0);
-        const cash = data.filter(o => o.payment_method === 'Efectivo').reduce((acc, o) => acc + Number(o.total), 0);
-        const nequi = data.filter(o => o.payment_method === 'Transferencia').reduce((acc, o) => acc + Number(o.total), 0);
-        
-        const today = new Date();
-        const daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
-        const currentDay = today.getDate();
-        const avg = total / currentDay;
-        const proj = avg * daysInMonth;
-
-        setStats({ totalSales: total, cash, nequi, ordersCount: data.length, dailyAverage: avg, projection: proj });
-        setChartData([
-          { name: 'Efectivo', valor: cash, color: '#10b981' },
-          { name: 'Nequi', valor: nequi, color: '#3b82f6' }
-        ]);
-
-        const counts: any = {};
-        data.forEach(order => {
-          order.items?.forEach((item: any) => {
-            counts[item.name] = (counts[item.name] || 0) + item.quantity;
-          });
-        });
-        const sorted = Object.entries(counts).map(([name, qty]) => ({ name, qty }))
-          .sort((a: any, b: any) => (b.qty as number) - (a.qty as number)).slice(0, 5);
-        setTopProducts(sorted);
-      }
-    }
     loadStats();
   }, []);
 
+  async function loadStats() {
+    const { data } = await supabase.from('orders').select('*').eq('status', 'completed');
+    if (data) {
+      const total = data.reduce((acc, o) => acc + Number(o.total), 0);
+      const cash = data.filter(o => o.payment_method === 'Efectivo').reduce((acc, o) => acc + Number(o.total), 0);
+      const nequi = data.filter(o => o.payment_method === 'Transferencia').reduce((acc, o) => acc + Number(o.total), 0);
+      
+      const today = new Date();
+      const daysInMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0).getDate();
+      const currentDay = today.getDate();
+      const avg = total / currentDay;
+      const proj = avg * daysInMonth;
+
+      setStats({ totalSales: total, cash, nequi, ordersCount: data.length, dailyAverage: avg, projection: proj });
+      setChartData([
+        { name: 'Efectivo', valor: cash, color: '#10b981' },
+        { name: 'Nequi', valor: nequi, color: '#3b82f6' }
+      ]);
+
+      const counts: any = {};
+      data.forEach(order => {
+        order.items?.forEach((item: any) => {
+          counts[item.name] = (counts[item.name] || 0) + item.quantity;
+        });
+      });
+      const sorted = Object.entries(counts).map(([name, qty]) => ({ name, qty }))
+        .sort((a: any, b: any) => (b.qty as number) - (a.qty as number)).slice(0, 5);
+      setTopProducts(sorted);
+    }
+  }
+
+  const handleCierreMes = async () => {
+    if (password !== '1080044879') {
+      return toast.error("Contraseña incorrecta de Administrador");
+    }
+
+    try {
+      const rankingTxt = topProducts.map((p, i) => `${i + 1}. ${p.name} (${p.qty} u.)`).join('\n');
+      const mensajeCierre = `🚨 *CIERRE DE MES - COMO EN CASA HELADERÍA* 🚨\n\n` +
+                           `👤 *Dueño:* David Alejandro Getial\n` +
+                           `📅 *Fecha:* ${new Date().toLocaleDateString()}\n` +
+                           `----------------------------------------\n` +
+                           `💰 *VENTA TOTAL MES:* $${stats.totalSales.toLocaleString()}\n` +
+                           `💵 *Total Efectivo:* $${stats.cash.toLocaleString()}\n` +
+                           `📱 *Total Nequi:* $${stats.nequi.toLocaleString()}\n` +
+                           `📦 *Cantidad Pedidos:* ${stats.ordersCount}\n` +
+                           `----------------------------------------\n` +
+                           `🏆 *TOP 5 PRODUCTOS MÁS VENDIDOS:*\n${rankingTxt}\n\n` +
+                           `🔐 _Base de datos vaciada y reiniciada a $0 para el nuevo mes._`;
+      
+      await sendTelegram(mensajeCierre);
+
+      await supabase.from('orders').delete().eq('status', 'completed');
+      await supabase.from('cash_movements').delete();
+
+      toast.success("¡Cierre de mes exitoso! Datos reiniciados a $0.");
+      setIsModalOpen(false);
+      setPassword('');
+      loadStats();
+    } catch (error) {
+      toast.error("Error al procesar el cierre");
+    }
+  };
+
   return (
     <div className="p-10 bg-[#F8FAFC] min-h-full">
-      <div className="mb-10">
-        <h1 className="text-4xl font-black uppercase text-slate-900 tracking-tighter">Gerencia Como en Casa</h1>
-        <p className="text-slate-500 font-medium italic">Análisis de ventas histórico</p>
+      <div className="flex justify-between items-end mb-10">
+        <div>
+          <h1 className="text-4xl font-black uppercase text-slate-900 tracking-tighter">Gerencia Como en Casa</h1>
+          <p className="text-slate-500 font-medium italic">Análisis de ventas del mes</p>
+        </div>
+        <Button onClick={() => setIsModalOpen(true)} className="bg-red-600 hover:bg-red-700 text-white rounded-2xl h-14 px-8 font-black uppercase text-[10px] shadow-lg flex items-center gap-2">
+          ⚙️ Ejecutar Cierre de Mes
+        </Button>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
         <Card className="p-8 bg-blue-600 text-white rounded-[40px] shadow-xl col-span-2 relative overflow-hidden">
-           <DollarSign className="absolute -right-4 -top-4 w-32 h-32 opacity-10" /><p className="text-xs font-black uppercase tracking-widest opacity-80">Venta Histórica</p><p className="text-5xl font-black mt-2 tracking-tighter">${stats.totalSales.toLocaleString()}</p>
-           <div className="mt-6 flex items-center gap-2 text-[10px] font-black bg-white/10 w-fit px-3 py-1 rounded-full uppercase"><ShoppingBag size={12}/> {stats.ordersCount} Pedidos hoy</div>
+           <DollarSign className="absolute -right-4 -top-4 w-32 h-32 opacity-10" />
+           <p className="text-xs font-black uppercase tracking-widest opacity-80">Venta Mensual Actual</p>
+           <p className="text-5xl font-black mt-2 tracking-tighter">${stats.totalSales.toLocaleString()}</p>
+           <div className="mt-6 flex items-center gap-2 text-[10px] font-black bg-white/10 w-fit px-3 py-1 rounded-full uppercase">
+             <ShoppingBag size={12}/> {stats.ordersCount} Pedidos facturados
+           </div>
         </Card>
+
         <Card className="p-8 bg-gradient-to-br from-purple-600 to-indigo-700 text-white rounded-[40px] shadow-xl relative overflow-hidden col-span-2">
-           <div className="absolute right-0 top-0 p-6 opacity-10"><Calendar size={80}/></div><p className="text-xs font-black uppercase tracking-widest opacity-80 flex items-center gap-2"><ArrowUpRight size={14}/> Proyección Cierre de Mes</p><p className="text-5xl font-black mt-2 tracking-tighter">${stats.projection.toLocaleString(undefined, {maximumFractionDigits:0})}</p><p className="text-[9px] mt-6 font-bold uppercase opacity-60">* Promedio diario: ${stats.dailyAverage.toLocaleString(undefined, {maximumFractionDigits:0})}</p>
+           <div className="absolute right-0 top-0 p-6 opacity-10"><Calendar size={80}/></div>
+           <p className="text-xs font-black uppercase tracking-widest opacity-80 flex items-center gap-2">
+             <ArrowUpRight size={14}/> Proyección Cierre de Mes
+           </p>
+           <p className="text-5xl font-black mt-2 tracking-tighter">${stats.projection.toLocaleString(undefined, {maximumFractionDigits:0})}</p>
+           <p className="text-[9px] mt-6 font-bold uppercase opacity-60">* Promedio diario: ${stats.dailyAverage.toLocaleString(undefined, {maximumFractionDigits:0})}</p>
         </Card>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center font-black">$</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Efectivo Total</p><p className="text-xl font-black text-slate-900">${stats.cash.toLocaleString()}</p></div></Card>
-         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center font-black">N</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Nequi Total</p><p className="text-xl font-black text-slate-900">${stats.nequi.toLocaleString()}</p></div></Card>
-         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4"><div className="w-12 h-12 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center font-serif font-black">P</div><div><p className="text-[10px] font-black text-slate-400 uppercase">Ticket Promedio</p><p className="text-xl font-black text-slate-900">${(stats.totalSales / (stats.ordersCount || 1)).toLocaleString(undefined, {maximumFractionDigits:0})}</p></div></Card>
+         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4">
+           <div className="w-12 h-12 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center font-black">$</div>
+           <div><p className="text-[10px] font-black text-slate-400 uppercase">Efectivo Mes</p><p className="text-xl font-black text-slate-900">${stats.cash.toLocaleString()}</p></div>
+         </Card>
+         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4">
+           <div className="w-12 h-12 bg-blue-50 text-blue-500 rounded-2xl flex items-center justify-center font-black">N</div>
+           <div><p className="text-[10px] font-black text-slate-400 uppercase">Nequi Mes</p><p className="text-xl font-black text-slate-900">${stats.nequi.toLocaleString()}</p></div>
+         </Card>
+         <Card className="p-6 bg-white border-none shadow-sm rounded-[32px] flex items-center gap-4">
+           <div className="w-12 h-12 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center font-serif font-black">P</div>
+           <div><p className="text-[10px] font-black text-slate-400 uppercase">Ticket Promedio</p><p className="text-xl font-black text-slate-900">${(stats.totalSales / (stats.ordersCount || 1)).toLocaleString(undefined, {maximumFractionDigits:0})}</p></div>
+         </Card>
       </div>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <Card className="p-10 bg-white rounded-[50px] border-none shadow-sm"><h2 className="text-xl font-black uppercase mb-8 flex items-center gap-2 text-slate-800"><TrendingUp size={20} className="text-blue-500"/> Balance de Ingresos</h2>
+        <Card className="p-10 bg-white rounded-[50px] border-none shadow-sm">
+          <h2 className="text-xl font-black uppercase mb-8 flex items-center gap-2 text-slate-800"><TrendingUp size={20} className="text-blue-500"/> Balance de Ingresos</h2>
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                 <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fontSize: 12, fontWeight: 'bold', fill: '#94a3b8'}} />
-                <YAxis hide />
                 <Tooltip cursor={{fill: '#f8fafc'}} contentStyle={{borderRadius: '20px', border: 'none', boxShadow: '0 20px 25px -5px rgba(0,0,0,0.1)', fontWeight: 'bold'}} />
-                <Bar dataKey="valor" radius={[15, 15, 0, 0]} barSize={60}>
+                <Bar dataKey="valor" radius={[10, 10, 0, 0]} barSize={60}>
                   {chartData.map((e, i) => (<Cell key={i} fill={e.color} />))}
                 </Bar>
               </BarChart>
             </ResponsiveContainer>
           </div>
         </Card>
-        <Card className="p-10 bg-white rounded-[50px] border-none shadow-sm"><h2 className="text-xl font-black uppercase mb-8 flex items-center gap-2 text-slate-800"><Star size={20} className="text-amber-500 fill-amber-500"/> Más Vendidos</h2>
+        <Card className="p-10 bg-white rounded-[50px] border-none shadow-sm">
+          <h2 className="text-xl font-black uppercase mb-8 flex items-center gap-2 text-slate-800"><Star size={20} className="text-amber-500 fill-amber-500"/> Más Vendidos del Mes</h2>
           <div className="space-y-6">
-            {topProducts.map((p, i) => {
-              // CORREGIDO: Cálculo seguro del porcentaje para evitar errores de tipo
+            {topProducts.map((p: any, i: number) => {
               const maxQty = topProducts[0]?.qty || 1;
               const percentage = (p.qty / maxQty) * 100;
               return (
@@ -8977,6 +9288,26 @@ export function Stats() {
           </div>
         </Card>
       </div>
+
+      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+        <DialogContent className="rounded-[40px] p-10 bg-white border-none shadow-2xl max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center text-2xl font-black uppercase tracking-tighter text-red-600">Cierre de Mes Autorizado</DialogTitle>
+            <DialogDescription className="text-center font-bold text-slate-400 text-xs uppercase mt-2">Se enviará el reporte y las ventas volverán a $0</DialogDescription>
+          </DialogHeader>
+          <div className="mt-6 space-y-6 text-center">
+            <input 
+              type="password" 
+              className="w-full p-6 bg-slate-50 rounded-[25px] text-3xl font-black text-center text-slate-800 outline-none shadow-inner border border-slate-100" 
+              placeholder="••••••••" 
+              value={password} 
+              onChange={e => setPassword(e.target.value)} 
+            />
+            <p className="text-[10px] font-black text-slate-300 uppercase tracking-[2px]">Ingresa contraseña de dueño</p>
+            <Button onClick={handleCierreMes} className="w-full h-16 bg-red-600 hover:bg-red-700 text-white rounded-2xl font-black text-base uppercase shadow-xl">AUTORIZAR Y REINICIAR</Button>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
@@ -15784,31 +16115,66 @@ El sistema incluye datos de ejemplo realistas:
 ### <a id="📄-readme-md"></a>📄 `README.md`
 
 **File Info:**
-- **Size**: 337 B
+- **Size**: 1.83 KB
 - **Extension**: `.md`
 - **Language**: `text`
 - **Location**: `README.md`
 - **Relative Path**: `root`
 - **Created**: 2026-04-15 20:08:28 (America/Bogota / GMT-05:00)
-- **Modified**: 2026-04-15 20:08:56 (America/Bogota / GMT-05:00)
-- **MD5**: `eeef486fb81bb53278623f1269897f09`
-- **SHA256**: `811a25d67319995bd46857e9438b91fd6cff9920fcc847ba3ea1d14aeb91a0fc`
+- **Modified**: 2026-05-13 01:16:08 (America/Bogota / GMT-05:00)
+- **MD5**: `b6185a33225bfba388c13709b9356cf4`
+- **SHA256**: `9dacd91d88e7a8ed39aad48d6655dd6e8e91ece61fd5b14b9d7339c5163e02cd`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ````markdown
+# 🍦 Sistema de Gestión "Fruti Home - Heladería Como en Casa"
+**Proyecto de Emprendimiento Tecnológico | Solución Comercial Real**
 
-  # Diseño de aplicación POS
+Este software fue diseñado y desarrollado para digitalizar la operación diaria de una heladería, permitiendo un control automatizado sobre las ventas, el inventario de insumos y la facturación.
 
-  This is a code bundle for Diseño de aplicación POS. The original project is available at https://www.figma.com/design/lJrS7ynMPvMmgQpv18mheW/Dise%C3%B1o-de-aplicaci%C3%B3n-POS.
+---
 
-  ## Running the code
+### 🚀 Funcionalidades Clave:
+- **Gestión de Inventarios:** Control de stock de productos y materias primas en tiempo real.
+- **Módulo de Ventas:** Interfaz optimizada para el registro de transacciones y flujo de caja diario.
+- **Reportes Financieros:** Generación de resúmenes automáticos de ingresos y egresos para la toma de decisiones.
+- **Base de Datos:** Arquitectura relacional para garantizar la integridad y seguridad de la información del negocio.
 
-  Run `npm i` to install the dependencies.
+### 🛠️ Stack Tecnológico:
+- **Lenguaje:** JavaScript / React (según tu carpeta node_modules).
+- **Estilos:** Material UI (MUI) para una interfaz moderna y profesional.
+- **Base de Datos:** SQL (PostgreSQL / MySQL) / Supabase.
+- **Control de Versiones:** Git & GitHub.
 
-  Run `npm run dev` to start the development server.
-  
+---
+
+### 📈 Impacto del Proyecto:
+La implementación de **Fruti Home** permitió eliminar el registro manual de ventas, reduciendo errores humanos en el cuadre de caja y optimizando la reposición de inventario basada en datos reales de consumo.
+
+### 📋 Requisitos e Instalación:
+1. Clona el repositorio:
+   ~~~~bash
+   git clone https://github.com
+   ~~~~
+2. Instala las dependencias (dentro de la carpeta del proyecto):
+   ~~~~bash
+   npm install
+   ~~~~
+3. Inicia la aplicación:
+   ~~~~bash
+   npm start
+   ~~~~
+
+---
+### 👨‍💻 Autor:
+**David Alejandro Getial Rosero**  
+*Ingeniero de Sistemas en formación (CESMAG) | Técnico en Programación de Software (SENA)*
+
+---
+⭐ **¡Apoya este proyecto dándole una estrella al repositorio!**
+
 ````
 
 ---

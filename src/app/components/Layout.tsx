@@ -12,7 +12,10 @@ export default function Layout() {
     { name: 'Mesas', path: '/', icon: <LayoutDashboard size={22} /> },
     { name: 'Cocina y Mostrador', path: '/cocina', icon: <Utensils size={22} /> },
     { name: 'Caja y Ventas', path: '/caja', icon: <Wallet size={22} /> },
-    { name: 'Inventario', path: '/inventario', icon: <Package size={22} /> },
+      /* 
+      DEJADO OCULTO EN LA APP (PERO EL CÓDIGO SIGUE VIVO AQUÍ ABAJO)
+      { name: 'Inventario', path: '/inventario', icon: Package }
+    */
   ];
 
   // MENÚ PARA ADMIN (Estrategia)
