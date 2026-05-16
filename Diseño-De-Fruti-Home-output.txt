@@ -5,7 +5,7 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: Diseño-De-Fruti-Home
-Generated On: 2026-05-16 01:47:36 (America/Bogota / GMT-05:00)
+Generated On: 2026-05-16 01:50:58 (America/Bogota / GMT-05:00)
 Total Files Processed: 88
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
@@ -119,7 +119,7 @@ PROJECT STRUCTURE
 ├── 📄 package.json (2.74 KB)
 ├── 📄 postcss.config.mjs (460 B)
 ├── 📄 README.md (1.83 KB)
-├── 📄 vercel.json (83 B)
+├── 📄 vercel.json (85 B)
 └── 📄 vite.config.ts (926 B)
 
 ================================================================================
@@ -129,7 +129,7 @@ Total Files: 88
 Total Directories: 11
 Text Files: 87
 Binary Files: 1
-Total Size: 490.4 KB
+Total Size: 490.41 KB
 
 FILE TYPES DISTRIBUTION:
 ------------------------------
@@ -16179,15 +16179,15 @@ FILE: vercel.json
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 83 B
+Size: 85 B
 Extension: .json
 Language: json
 Location: vercel.json
 Relative Path: root
 Created: 2026-05-16 01:47:04 (America/Bogota / GMT-05:00)
-Modified: 2026-05-16 01:47:36 (America/Bogota / GMT-05:00)
-MD5: 493ac9209793531721c9e3b095e48d30
-SHA256: 4293c14432d945472112a2e2356bdad192a7f76fb1b9eb8a8a14c1385b187d40
+Modified: 2026-05-16 01:50:58 (America/Bogota / GMT-05:00)
+MD5: 7708fbf29b99cd92c2a778d60001c5ba
+SHA256: 44a3d3ed7bae63c44f6baa65404c4470568a1633ca88c5304f6460014842bb62
 Encoding: ASCII
 
 FILE CONTENT:
@@ -16197,6 +16197,7 @@ FILE CONTENT:
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
+
 ================================================================================
 
 
